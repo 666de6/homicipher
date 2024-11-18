@@ -1,7 +1,7 @@
 {
-  "name": "DEATH NOTE Killer Within",
-  "version": "1.0.0",
-  "description": "DEATH NOTE Killer Within: The Ultimate Multiplayer Social Deduction Game",
+  "name": "homicipher",
+  "version": "2.1.3",
+  "description": "Homicipher: A Horror Language-Deciphering Adventure Game",
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
