@@ -1,51 +1,78 @@
-# DEATH NOTE Killer Within: The Ultimate Social Deduction Game
+# Homicipher: A Unique Horror Adventure of Language and Mystery
 
-Welcome to the fan site for DEATH NOTE Killer Within, a thrilling multiplayer social deduction game that brings the psychological warfare of DEATH NOTE into an intense gaming experience. Visit [DEATH NOTE Killer Within](https://deathnotekillerwithin.org/) to learn more about the game and join the community.
+Welcome to the fan website for Homicipher, an innovative horror language deciphering game that combines atmospheric horror with unique puzzle-solving mechanics. Visit [Homicipher](https://homicipher.cc/) to begin your mysterious journey.
 
 ## Game Overview
 
-DEATH NOTE Killer Within is a multiplayer social deduction game where players engage in a battle of wits, deception, and strategy. Set in the DEATH NOTE universe, players must navigate complex social dynamics while trying to achieve their secret objectives.
+Homicipher is a groundbreaking female-targeted horror adventure game where players must decode an alien language to survive. Set in a mysterious and haunting world, players interact with enigmatic beings while uncovering the dark secrets that lie within.
 
 ### Key Features
 
-- **Intense Social Deduction**: Up to 10 players engage in psychological warfare
-- **Multiple Character Roles**: Play as iconic DEATH NOTE characters
-- **Cross-Platform Multiplayer**: Available on PC and PlayStation
-- **Strategic Gameplay**: Use deduction, deception, and detective work
-- **Customization Options**: Personalize your character and experience
+- **Innovative Language System**: Master a unique alien language through context and environmental clues
+- **Atmospheric Horror**: Immerse yourself in a dark and mysterious world
+- **Multiple Endings**: Your choices and understanding affect the story's outcome
+- **Character Interactions**: Engage with mysterious beings, each with their own motives
+- **Progressive Difficulty**: Language puzzles become more complex as you advance
 
 ## System Requirements
 
 ### Minimum Requirements
-- OS: Windows 10
-- RAM: 8GB
-- GPU: NVIDIA GTX 1050 or equivalent
-- Storage: 20GB available space
+- OS: Windows 7 or greater
+- CPU: Intel i5 Quad-Core
+- RAM: 4 GB
+- Graphics: NVIDIA GeForce GTX 750 Ti
+- Storage: 2 GB available space
 
 ### Recommended Requirements
 - OS: Windows 10/11
-- RAM: 16GB
-- GPU: NVIDIA GTX 960 or better
-- Storage: 30GB available space
+- CPU: Intel i7 or equivalent
+- RAM: 8 GB
+- Graphics: NVIDIA GeForce GTX 1060
+- Storage: 2 GB available space
 
-## Game Editions
+## Game Features
 
-### Standard Edition
-- Base game with all core features
-- Access to standard character roles
-- Basic customization options
+### Core Gameplay
+- Unique language deciphering mechanics
+- Point-and-click exploration
+- Character interaction system
+- Language progression tracking
+- Environmental storytelling
 
-### Special Edition
-- Exclusive character skins
-- Additional customization options
-- Special in-game effects
-- Digital artbook and soundtrack
+### Story Elements
+- Rich, mysterious narrative
+- Multiple story paths
+- Complex character relationships
+- Hidden secrets and lore
+- Atmospheric world-building
 
-### DLC Content
-- Customization Track Packs
-- Additional character roles
-- Special themed events
+## Download Options
+
+### PC Version
+- Available on Steam
+- Full HD graphics
+- Enhanced audio experience
+- Steam achievements and cloud saves
+
+### Android Version
+- APK download available
+- Optimized touch controls
+- Portable gameplay experience
+- Version 2.1.3 current release
 
 ## Community & Support
 
-- **Website**: [deathnotekillerwithin.org](https://deathnotekillerwithin.org/)
+- **Website**: [homicipher.cc](https://homicipher.cc/)
+- **Steam Page**: [Homicipher on Steam](https://store.steampowered.com/app/2302660/Homicipher/)
+
+## Development
+
+This website is built using:
+- Eleventy (11ty) for static site generation
+- Tailwind CSS for styling
+- Nunjucks for templating
+- Modern web development best practices
+
+## License
+
+All rights reserved. The content and assets of Homicipher are protected by copyright law.
