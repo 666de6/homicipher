@@ -8,14 +8,51 @@ layout: base.njk
         
         <div class="bg-[url('/assets/homicipher.webp')] aspect-video bg-cover p-4 rounded-lg mb-6 flex flex-col items-center justify-center">
             <div class="flex gap-6 text-center mb-20">
-                <a href="/#download" class="mt-10 inline-block bg-red hover:bg-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-lg">
-                    Play Homicipher Today
+                <a href="/#download" class="group relative mt-10 inline-block bg-red hover:bg-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-lg overflow-hidden">
+                    <span class="relative z-10 group-hover:animate-textglitch">Play Homicipher Today</span>
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-100">
+                        <div class="absolute inset-0 animate-glitchbg bg-blood"></div>
+                        <div class="absolute inset-0 animate-glitchbg2 bg-green delay-75"></div>
+                    </div>
                 </a>
-                <!-- <a href="https://store.steampowered.com/app/2302660/Homicipher/" class="mt-10 inline-block bg-red hover:bg-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-lg">
-                    Watch Homicipher Trailer
-                </a> -->
             </div>
         </div>
+
+        <style>
+            @keyframes textglitch {
+                0% { transform: translate(0); }
+                20% { transform: translate(-2px, 2px); }
+                40% { transform: translate(2px, -2px); }
+                60% { transform: translate(-2px, -2px); }
+                80% { transform: translate(2px, 2px); }
+                100% { transform: translate(0); }
+            }
+            @keyframes glitchbg {
+                0% { clip-path: inset(80% 0 0 0); transform: translate(-2px); }
+                20% { clip-path: inset(20% 0 40% 0); transform: translate(2px); }
+                40% { clip-path: inset(40% 0 60% 0); transform: translate(-2px); }
+                60% { clip-path: inset(60% 0 20% 0); transform: translate(2px); }
+                80% { clip-path: inset(0 0 80% 0); transform: translate(-2px); }
+                100% { clip-path: inset(80% 0 0 0); transform: translate(2px); }
+            }
+            @keyframes glitchbg2 {
+                0% { clip-path: inset(0 0 60% 0); transform: translate(2px); }
+                20% { clip-path: inset(40% 0 20% 0); transform: translate(-2px); }
+                40% { clip-path: inset(60% 0 40% 0); transform: translate(2px); }
+                60% { clip-path: inset(20% 0 80% 0); transform: translate(-2px); }
+                80% { clip-path: inset(80% 0 0 0); transform: translate(2px); }
+                100% { clip-path: inset(0 0 60% 0); transform: translate(-2px); }
+            }
+            .animate-textglitch {
+                animation: textglitch 0.3s infinite;
+            }
+            .animate-glitchbg {
+                animation: glitchbg 0.3s infinite;
+            }
+            .animate-glitchbg2 {
+                animation: glitchbg2 0.3s infinite;
+            }
+        </style>
     </section>
 
     <section class="mt-10 text-center" id="about">
@@ -68,78 +105,96 @@ layout: base.njk
 
     <section class="mt-10 text-center" id="characters">
         <h2 class="text-2xl font-bold mb-4 underline">Meet the Mysterious Beings of Homicipher</h2>
-        <p class="mb-6">In the enigmatic world of Homicipher, you'll encounter various mysterious beings. Each character in Homicipher has their own unique personality, motives, and way of communicating. Your interactions with them will shape your journey and potentially determine your fate.</p>
+        <p class="mb-6">In the enigmatic world of Homicipher, you'll encounter various mysterious beings. Each character has their own unique personality, motives, and way of communicating. Your interactions with them will shape your journey and potentially determine your fate.</p>
         
-        <div class="gap-8">
+        <div class="flex flex-col gap-8">
+            <!-- Mr. Hood -->
             <div class="flex flex-col md:flex-row gap-4 bg-green p-4 rounded-lg">
                 <img src="/assets/mrhood.jpeg" alt="Mr. Hood" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
                 <div class="md:w-1/2">
                     <h3 class="text-lg font-bold text-red mb-2">Mr. Hood</h3>
-                    <p class="mb-3">A mysterious figure who serves as your initial guide in Homicipher. Despite his intimidating appearance reminiscent of the Grim Reaper, Mr. Hood shows unexpected kindness, teaching you the basics of the world's strange language. His protective nature and reliable presence make him a crucial ally in your journey through Homicipher.</p>
+                    <p class="mb-3">A mysterious figure who serves as your initial guide in Homicipher. Despite his intimidating appearance reminiscent of the Grim Reaper, Mr. Hood shows unexpected kindness, teaching you the basics of the world's strange language. His protective nature and reliable presence make him a crucial ally in your journey.</p>
                     <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
-                        <li>First character to help you understand the language</li>
-                        <li>Maintains a protective presence throughout your journey</li>
-                        <li>Mysterious yet dependable mentor figure</li>
+                        <li>Kuudere with protective big brother vibes</li>
+                        <li>Always there to help and stays true to his word</li>
+                        <li>First to teach you the basics of the language</li>
                     </ul>
                 </div>
             </div>
             
+            <!-- Mr. Crawling -->
             <div class="flex flex-col md:flex-row gap-4 bg-green p-4 rounded-lg">
                 <div class="md:w-1/2">
                     <h3 class="text-lg font-bold text-red mb-2">Mr. Crawling</h3>
-                    <p class="mb-3">Initially appearing as a threatening presence in Homicipher, Mr. Crawling's true nature is more complex than first impressions suggest. His hunched figure and unsettling movements might inspire fear, but his actions often reveal a deeper purpose. As you progress through Homicipher, you'll discover the layers to his character.</p>
+                    <p class="mb-3">Initially appearing as a threatening presence, Mr. Crawling's true nature is more complex than first impressions suggest. Your ultimate ride-or-die companion who will do anything to protect you in Homicipher. His hunched figure and unsettling movements might inspire fear, but his actions reveal a deep devotion.</p>
                     <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
-                        <li>Unpredictable ally with crucial knowledge</li>
-                        <li>Provides vital warnings about dangers</li>
+                        <li>Your most loyal companion throughout the journey</li>
+                        <li>Always by your side and at your beck and call</li>
                         <li>Complex character with mysterious motivations</li>
                     </ul>
                 </div>
                 <img src="/assets/mrcrawling.jpeg" alt="Mr. Crawling" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
             </div>
 
-            <!-- <div class="bg-red bg-opacity-20 p-4 rounded-lg">
-                <h3 class="text-lg font-bold text-red mb-2">The Shadow</h3>
-                <p class="mb-3">A enigmatic entity in Homicipher that appears and disappears at unexpected moments. The Shadow's presence in Homicipher often signals important story developments or hidden paths. Learning to interpret its cryptic messages is crucial for understanding the deeper mysteries of this world.</p>
-                <ul class="text-sm text-left list-disc pl-4">
-                    <li>Appears at crucial moments in your journey</li>
-                    <li>Speaks in particularly complex language patterns</li>
-                    <li>May hold keys to alternative story paths</li>
-                </ul>
+            <!-- Mr. Silvair -->
+            <div class="flex flex-col md:flex-row gap-4 bg-green p-4 rounded-lg">
+                <img src="/assets/mrsilvair.png" alt="Mr. Silvair" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
+                <div class="md:w-1/2">
+                    <h3 class="text-lg font-bold text-red mb-2">Mr. Silvair</h3>
+                    <p class="mb-3">A scholarly figure with a sensei-like presence in Homicipher, Mr. Silvair is one of your most effective language teachers. Despite his initially standoffish demeanor, he reveals a surprisingly gentle nature. His passion for research extends to studying both the language and those who learn it.</p>
+                    <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
+                        <li>Expert teacher of the mysterious language</li>
+                        <li>Scholarly and methodical in his approach</li>
+                        <li>Gentle nature beneath a stern exterior</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="bg-red bg-opacity-20 p-4 rounded-lg">
-                <h3 class="text-lg font-bold text-red mb-2">The Whispers</h3>
-                <p class="mb-3">Collective entities in Homicipher that communicate through hushed, overlapping voices. These mysterious beings in Homicipher test your language comprehension skills in unique ways, as their messages often contain vital clues about the world's secrets.</p>
-                <ul class="text-sm text-left list-disc pl-4">
-                    <li>Communicate through overlapping whispered phrases</li>
-                    <li>Provide cryptic hints about the world's nature</li>
-                    <li>Challenge players to decipher multiple voices</li>
-                </ul>
+            <!-- Mr. Machete -->
+            <div class="flex flex-col md:flex-row gap-4 bg-green p-4 rounded-lg">
+                <div class="md:w-1/2">
+                    <h3 class="text-lg font-bold text-red mb-2">Mr. Machete</h3>
+                    <p class="mb-3">A powerful presence who embodies the "might makes right" philosophy in Homicipher. Initially indifferent, Mr. Machete only shows interest in those who prove their strength. Behind his intimidating exterior lies an unexpected depth, revealed only to those who earn his respect.</p>
+                    <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
+                        <li>Values strength and prowess above all</li>
+                        <li>Challenges others to prove themselves</li>
+                        <li>Surprisingly caring once respect is earned</li>
+                    </ul>
+                </div>
+                <img src="/assets/mrmachete.png" alt="Mr. Machete" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
             </div>
 
-            <div class="bg-red bg-opacity-20 p-4 rounded-lg">
-                <h3 class="text-lg font-bold text-red mb-2">The Keeper</h3>
-                <p class="mb-3">A formidable presence in the world of Homicipher who guards important locations and secrets. The Keeper's role in Homicipher extends beyond simple guardian - their knowledge of the world's history and language makes them a valuable but dangerous source of information.</p>
-                <ul class="text-sm text-left list-disc pl-4">
-                    <li>Guards crucial areas and knowledge</li>
-                    <li>Tests player's mastery of the language</li>
-                    <li>Holds key information about the world's mysteries</li>
-                </ul>
+            <!-- Mr. Gap -->
+            <div class="flex flex-col md:flex-row gap-4 bg-green p-4 rounded-lg">
+                <img src="/assets/mrgap.png" alt="Mr. Gap" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
+                <div class="md:w-1/2">
+                    <h3 class="text-lg font-bold text-red mb-2">Mr. Gap</h3>
+                    <p class="mb-3">A chaotic but reliable ally who often appears in life-or-death situations in Homicipher. While he may seem unpredictable, Mr. Gap always follows through on his promises. His clever nature and deep knowledge make him an invaluable, if mysterious, source of information about your past.</p>
+                    <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
+                        <li>Efficient and reliable despite his chaotic nature</li>
+                        <li>Provides crucial help in dangerous situations</li>
+                        <li>Holds important clues about your backstory</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="bg-red bg-opacity-20 p-4 rounded-lg">
-                <h3 class="text-lg font-bold text-red mb-2">The Echo</h3>
-                <p class="mb-3">A unique entity in Homicipher that mirrors and transforms your own words. This mysterious being plays a crucial role in helping you understand the subtleties of communication in this world, though their true nature remains one of Homicipher's many enigmas.</p>
-                <ul class="text-sm text-left list-disc pl-4">
-                    <li>Reflects and transforms player communications</li>
-                    <li>Helps develop deeper language understanding</li>
-                    <li>Reveals hidden meanings in familiar phrases</li>
-                </ul>
-            </div> -->
+            <!-- Mr. Chopped -->
+            <div class="flex flex-col md:flex-row gap-4 bg-green p-4 rounded-lg">
+                <div class="md:w-1/2">
+                    <h3 class="text-lg font-bold text-red mb-2">Mr. Chopped</h3>
+                    <p class="mb-3">Despite often being the target of other monsters' teasing, Mr. Chopped maintains an endearing and energetic personality in Homicipher. Found friendship in Mr. Silvair and Mr. Crawling, who help him navigate his unique existence. His charming quirk of being particular about his hair adds a touch of levity to this Homicipher character.</p>
+                    <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
+                        <li>Cheerful and resilient despite adversity</li>
+                        <li>Forms genuine friendships with others</li>
+                        <li>Endearingly particular about his appearance</li>
+                    </ul>
+                </div>
+                <img src="/assets/mrchopped.png" alt="Mr. Chopped" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
+            </div>
         </div>
 
         <div class="mt-6 italic p-4 rounded-lg">
-            <p class="text-sm italic">Note: In Homicipher, your interactions with these beings can vary significantly based on your choices and understanding of their language. Each character's true nature and intentions may be revealed differently throughout multiple playthroughs of Homicipher.</p>
+            <p class="text-sm italic">Note: In Homicipher, your interactions with these beings can vary significantly based on your choices and understanding of their language. Each character's true nature and intentions may be revealed differently throughout multiple playthroughs.</p>
         </div>
     </section>
 
