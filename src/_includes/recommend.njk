@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: all
+---
+{% set lang = page.url | startsWith("/fr/") | ternary("fr", "en") %}
+<div class="bg-[#fefefe] w-full max-w-[1000px] m-auto px-4">
+
+  {{ content | safe }}
+
+  <main class="mt-10 flex flex-row flex-wrap items-center justify-center gap-2">
+    {% for key, value in gamedata %}
+      {% if (value.category == title) %}
+        <div class="w-32 h-32 bg-[url('{{ value.bgCover }}')] bg-cover bg-center cursor-pointer shadow-md overflow-hidden relative">
+          <a href="{{ value.path | localizeUrl(lang) }}" class="opacity-0 hover:opacity-100 bg-yellow bg-opacity-0 hover:bg-opacity-90 absolute w-full h-full top-0 left-0 z-99 flex items-end justify-start p-2">
+            {# <div class="w-full h-8 md:h-6 bg-light-orange bg-opacity-90 absolute bottom-0 flex items-center justify-center text-sm"> #}
+              <h3 class="text-xs font-bold text-green text-center">{{ value.name }}</h3>
+            {# </div> #}
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}   
+          
+  </main>
+</div>

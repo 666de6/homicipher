@@ -1,0 +1,34 @@
+{
+  "gameList": [
+    {
+      "name": "Sprunki Incredibox",
+      "img": "/assets/gamecover.jpeg",
+      "path": "https://sprunki.top/"
+    },
+    {
+      "name": "Sprunki Infected Mod",
+      "img": "/assets/aside03.jpeg",
+      "path": "https://sprunki.top/sprunki-infected-mod"
+    },
+    {
+      "name": "Sprunki But I Ruined It",
+      "img": "/assets/aside04.jpeg",
+      "path": "https://sprunki.top/sprunki-but-i-ruined-it"
+    },
+    {
+      "name": "Incredibox V1 Alpha",
+      "img": "/assets/v1.jpeg",
+      "path": "https://sprunki.top/incredibox-v1-alpha"
+    },
+    {
+      "name": "FNF vs Sprunki - Sprunkin",
+      "img": "/assets/sprunki-fnf.webp",
+      "path": "https://sprunki.top/sprunki-fnf"
+    },
+    {
+      "name": "Sprunki Dandy's World",
+      "img": "/assets/sprunki-world.webp",
+      "path": "https://sprunki.top/sprunki-dandy-world"
+    }
+  ]
+}

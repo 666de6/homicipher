@@ -1,0 +1,67 @@
+{
+  "index": {
+    "name": "Mahjong Connect",
+    "description": "",
+    "bgCover": "/assets/mahjong-connect.avif",
+    "iframeUrl": "https://mahjong-connect-1.game-files.crazygames.com/ruffle/mahjong-connect-1/1/634cb851-8253-41dd-a7c8-23a22ddf468b.html?v=1.307",
+    "path": "/",
+    "category": "all"
+  },
+  "mahjong-solitaire": {
+    "name": "Mahjong Solitaire",
+    "description": "",
+    "bgCover": "/assets/mahjong-solitaire.avif",
+    "iframeUrl": "https://www.crazygames.com/embed/mahjongg-solitaire",
+    "path": "/mahjong-solitaire",
+    "category": "all"
+  },
+  "mahjong-big": {
+    "name": "Mahjong Big",
+    "description": "",
+    "bgCover": "/assets/mahjong-big.avif",
+    "iframeUrl": "https://www.crazygames.com/embed/mahjong-big",
+    "path": "/mahjong-big",
+    "category": "all"
+  },
+  "mahjong-online": {
+    "name": "Mahjong Online",
+    "description": "",
+    "bgCover": "/assets/mahjong-online.avif",
+    "iframeUrl": "https://www.crazygames.com/embed/mahjong-classic-webgl",
+    "path": "/mahjong-online",
+    "category": "all"
+  },
+  "piles-of-mahjong": {
+    "name": "Piles of Mahjong",
+    "description": "",
+    "bgCover": "/assets/piles-of-mahjong.avif",
+    "iframeUrl": "https://www.crazygames.com/embed/piles-of-mahjong-jhb",
+    "path": "/piles-of-mahjong",
+    "category": "all"
+  },
+  "mahjong-shanghai": {
+    "name": "Mahjong Shanghai",
+    "description": "",
+    "bgCover": "/assets/mahjong-shanghai.avif",
+    "iframeUrl": "https://mahjong-shanghai-dynasty.game-files.crazygames.com/ruffle/mahjong-shanghai-dynasty/1/cb04cd1eaf98fc41850199607f4bafae.html?v=1.307",
+    "path": "/mahjong-shanghai",
+    "category": "all"
+  },
+  "mahjong-tower": {
+    "name": "Mahjong Tower",
+    "description": "",
+    "bgCover": "/assets/mahjong-tower.avif",
+    "iframeUrl": "https://mahjong-tower-2.game-files.crazygames.com/ruffle/mahjong-tower-2/1/mahjong-tower-2.html?v=1.307",
+    "path": "/mahjong-tower",
+    "category": "all"
+  },
+  "mahjong-titans": {
+    "name": "Mahjong Titans",
+    "description": "",
+    "bgCover": "/assets/mahjong-titans.avif",
+    "iframeUrl": "https://mahjong-titans.game-files.crazygames.com/ruffle/mahjong-titans/1/mahjong%20titans.html?v=1.307",
+    "path": "/mahjong-titans",
+    "category": "all"
+  }
+
+}

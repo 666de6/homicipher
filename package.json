@@ -1,0 +1,13 @@
+{
+  "name": "DEATH NOTE Killer Within",
+  "version": "1.0.0",
+  "description": "DEATH NOTE Killer Within: The Ultimate Multiplayer Social Deduction Game",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}

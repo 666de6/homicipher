@@ -1,0 +1,77 @@
+{
+  "en": {
+    "basic": {
+      "path": "/",
+      "navbar": [
+        {
+          "title": "Home",
+          "url": "/"
+        },
+        {
+          "title": "Download",
+          "url": "/#download"
+        }
+      ],
+      "play-button": "Play Now",
+      "full-screen-button": "Full Screen",
+      "hot-games": "Hot WEBFISHING Game Wiki games",
+      "other-games": "Try Other Popular Games Online",
+      "blog": {
+        "title": "WEBFISHING Game Wiki Blog",
+        "sub": ["Recent Posts"]
+      },
+      "privacy": {
+        "all": "All rights reserved",
+        "pp": "Privacy Policy"
+      }
+    },
+    "index": {
+      "title": "Homicipher: A Unique Horror Adventure of Language and Mystery",
+      "description": "Explore a haunting world in Homicipher where survival depends on decoding an alien language. Face mysterious beings and uncover dark secrets in this horror adventure."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Homicipher",
+      "description": "Privacy policy for Homicipher. Learn how we protect your information while you explore our content about this unique horror language deciphering game."
+    }
+  },
+  "fr": {
+    "basic": {
+      "path": "/fr",
+      "navbar": [
+        {
+          "title": "Accueil",
+          "url": "/fr"
+        },
+        {
+          "title": "Jeux Populaires",
+          "url": "/fr/hot-games"
+        },
+        {
+          "title": "Blog",
+          "url": "/fr/blog"
+        }
+      ],
+      "play-button": "Jouer Maintenant",
+      "full-screen-button": "Plein écran",
+      "hot-games": "Jeux WEBFISHING Game Wiki populaires",
+      "other-games": "Essayez d'autres jeux populaires en ligne",
+      "blog": {
+        "title": "Blog sur les Jeux de WEBFISHING Game Wiki",
+        "sub": ["Articles récents"]
+      },
+      "hot": {
+        "title": "Jeux de WEBFISHING Game Wiki populaires",
+        "sub": ["#1 Jeux de Mahjong"]
+      },
+      "privacy": {
+        "all": "Tous droits réservés",
+        "pp": "Politique de confidentialité"
+      }
+    },
+    "index": {
+      "title": "Les Meilleurs Jeux de WEBFISHING Game Wiki en Ligne Gratuits | WEBFISHING Game Wiki",
+      "description": "Découvrez WEBFISHING Game Wiki, un jeu de puzzle captivant qui combine la beauté des tuiles Mahjong traditionnelles avec des mécaniques de connexion innovantes. | WEBFISHING Game Wiki"
+    }
+    
+  }
+} 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% set lang = page.url | startsWith("/fr/") | ternary("fr", "en") %}
+  {% set currentSlug = page.url | replace("/fr/", "") | replace("/en/", "") | replace("blog/", "") | replace("/", "") %}
+  {% set currentSlug = currentSlug if currentSlug else "index" %}
+  {% set pageTranslation = translations[lang][currentSlug] %}
+  {% set basicTranslation = translations[lang].basic %}
+  {# {% set subUrl = page.url | removeTrailingSlash %} #}
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  
+  <title>{{ pageTranslation.title }}</title>
+  <meta name="description" content="{{ pageTranslation.description }}">
+  <meta property="og:title" content="{{ pageTranslation.title }}" />
+  <meta property="og:description" content="{{ pageTranslation.description }}" />
+  <meta property="og:url" content="https://homicipher.cc{{ page.url }}" />
+  <meta property="og:site_name" content="homicipher.cc" />
+  <meta property="og:image" content="https://homicipher.cc/assets/homicipher.webp" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ pageTranslation.title }}" />
+  <meta name="twitter:description" content="{{ pageTranslation.description }}" />
+  <meta name="twitter:image" content="https://homicipher.cc/assets/homicipher.webp" />
+  <meta name="keywords" content="Homicipher, horror game, language deciphering, mystery game, puzzle game, adventure game" />
+  <link rel="canonical" href="https://homicipher.cc{{ page.url }}" />
+
+
+  <!-- <meta name="google-adsense-account" content="ca-pub-5331303144323541"> -->
+  <link id="favicon" rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./toastify.min.css"> -->
+  <!-- <script type="text/javascript" src="./toastify-js.js"></script> -->
+  <script src="/js/tailwindcss.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: '#111519',
+            yellow: '#f7f8f1',
+            red: '#804137',
+            light: '#f7f8f1'
+          }
+        }
+      }
+    }
+
+  </script>
+</head>
+<body class="bg-[url('/assets/homicipher.webp')] bg-cover w-full max-w-[1000px] m-auto px-4 text-yellow font-mono bg-fixed">
+  {# FB comment #}
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
+  {# FB comment #}
+  <header class="bg-green bg-opacity-80 h-20 flex justify-between items-center py-4 px-4 border-b-2 border-red sticky top-0 z-[999]">
+    <a href="{{ '/' | localizeUrl(lang) }}" alt="Homicipher Game Guide">
+        <div class="w-44 font-black text-md flex items-center">
+          <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="/assets/favicon.ico" class="w-20"/>
+          </div>
+          <span class="ml-2 text-light">Homicipher</span>
+        </div>
+    </a>
+    <div class="flex items-center gap-4">
+      <nav id="nav-menu" class="hidden md:block">
+        <div class="shadow-md shadow-[#ffca4e] bg-green md:shadow-none flex flex-col fixed z-[9999] top-14 right-4 shadow-md md:static p-4 text-sm lg:text-md md:flex-row items-center gap-6 font-bold">
+          {% for item in basicTranslation.navbar %}
+            <a href="{{ item.url | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ item.title }}</a>
+          {% endfor %}
+          
+        </div>
+      </nav>
+      <button id="menu-toggle" class="md:hidden p-2">
+        <img src="/assets/hum.svg" class="w-6 h-6" alt="unfold"/>
+      </button>
+      {% set cleanedUrl = page.url | replace('/fr/', '/') | removeTrailingSlash %}
+      <!-- Language Dropdown -->
+      {# <div class="relative inline-block">
+        <button id="language-toggle" class="flex items-center gap-1 hover:text-red text-sm lg:text-md font-black font-sans">
+          <span>{{ lang | upper }}</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="language-menu" class="hidden absolute right-0 mt-2 py-2 w-32 bg-white rounded-md shadow-xl z-50">
+          <a href="{{ cleanedUrl }}" 
+              class="block px-4 py-2 text-sm hover:bg-gray-100 {% if lang === 'en' %}text-green{% endif %}">
+            English 🇺🇲
+          </a>
+          <a href="/fr{{ cleanedUrl }}" 
+              class="block px-4 py-2 text-sm hover:bg-gray-100 {% if lang === 'fr' %}text-green{% endif %}">
+            Français 🇫🇷
+          </a>
+        </div>
+      </div> #}
+    </div>
+
+  </header>
+
+  {# {% if gamedata[currentSlug] and currentSlug != 'index' %}
+    <nav class="mt-4 font-sans">
+      <a href="{{ '/' | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ basicTranslation.navbar[0].title }}</a>
+      >
+      <a href="{{ '/hot-games' | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ basicTranslation.navbar[1].title }}</a>
+      >
+      <a href="{{ gamedata[currentSlug].path | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ gamedata[currentSlug].name }}</a>
+    </nav>
+  {% endif %} #}
+
+  {{ content | safe }}
+  
+  <section class="bg-green bg-gradient-to-l from-green to-red">
+    <div class="text-center p-8 rounded-lg text-light">
+        <h2 class="text-2xl font-bold mb-4">Get Homicipher Today</h2>
+        <p class="mb-6">Ready to begin your journey into the mysterious world of Homicipher? Download now and start your adventure!</p>
+        <a href="https://store.steampowered.com/app/2302660/Homicipher/" target="_blank" class="py-3 px-6 bg-white text-light rounded-full font-bold hover:bg-red bg-opacity-20">Download Homicipher on Steam →</a>
+    </div>
+  </section>
+  <footer class="bg-green bg-opacity-80 border-t-2 border-red py-5 flex flex-col justify-center items-center text-center">
+    {# <div class=" w-full mt-10">
+      <h2 class="text-xl mb-2 text-center lg:text-2xl text-yellow font-black font-sans underline decoration-double">{{ basicTranslation["other-games"] }}</h2>
+      <div class="flex flex-row flex-wrap items-center justify-center gap-2">
+        {% for item in linkedgames.gameList %}
+          <div class="w-24 h-24 bg-[url('{{ item.img }}')] bg-cover shadow-md rounded-lg bg-center cursor-pointer overflow-hidden relative">
+            <a href="{{ item.path }}" class="opacity-0 hover:opacity-100 bg-yellow bg-opacity-0 hover:bg-opacity-90 absolute w-full h-full top-0 left-0 z-99 flex items-end justify-start p-2">
+                <h3 class="text-xs font-bold text-green text-center">{{ item.name }}</h3>
+            </a>
+          </div>
+        {% endfor %}      
+        </div>
+    </div> #}
+
+    {# <div class="mt-20 flex justify-center text-sm text-green">
+      <a href="{{ page.url | replace('/fr/', '/') }}" class="mr-2 px-4 py-2 bg-yellow rounded hover:scale-110 transition duration-300">
+        English 🇺🇲
+      </a>
+      <a href="/fr{{ page.url | replace('/fr/', '/') }}" class="ml-2 px-4 py-2 bg-yellow rounded hover:scale-110 transition duration-300">
+        Français 🇫🇷
+      </a>
+    </div> #}
+    <p class="text-xs mt-10">
+      &copy;
+      <span id="copyright"></span>
+      homicipher.cc. 
+      <span id="copyright-year">{{ basicTranslation.privacy.all }}</span>.
+      
+      <a href="{{ '/privacy' | localizeUrl(lang) }}" class="text-red">
+        {{ basicTranslation.privacy.pp }}
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('copyright').innerText = new Date().getFullYear() + '';
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentUrlHash = window.location.hash;
+      const currentUrlPathname = window.location.pathname;
+      const currentUrl = currentUrlHash ? currentUrlPathname + currentUrlHash : currentUrlPathname;
+
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentUrl) {
+          link.classList.add('text-red');
+        }
+      });
+
+      window.addEventListener('hashchange', function() {
+        const currentUrlHash = window.location.hash;
+        const currentUrlPathname = window.location.pathname;
+        const currentUrl = currentUrlHash ? currentUrlPathname + currentUrlHash : currentUrlPathname;
+        navLinks.forEach(link => {
+          link.classList.remove('text-red');
+          if (link.getAttribute('href') === currentUrl) {
+            link.classList.add('text-red');
+          }
+        });
+      });
+
+    });
+
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('hidden');
+    });
+
+    // Language dropdown toggle
+    {# const languageToggle = document.getElementById('language-toggle');
+    const languageMenu = document.getElementById('language-menu');
+
+    languageToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      languageMenu.classList.toggle('hidden');
+    }); #}
+
+    // Close dropdown when clicking outside
+    {# document.addEventListener('click', (e) => {
+      if (!languageMenu.contains(e.target) && !languageToggle.contains(e.target)) {
+        languageMenu.classList.add('hidden');
+      }
+    }); #}
+  </script>
+  <!-- For Analysis -->
+  <script defer data-domain="homicipher.cc" src="https://app.pageview.app/js/script.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFNBX0T72E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BFNBX0T72E');
+  </script>
+
+</body>
+</html>
