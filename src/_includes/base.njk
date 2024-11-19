@@ -57,11 +57,12 @@
   {# FB comment #}
   <header class="bg-green bg-opacity-80 h-20 flex justify-between items-center py-4 px-4 border-b-2 border-red sticky top-0 z-[999]">
     <a href="{{ '/' | localizeUrl(lang) }}" alt="Homicipher Game Guide">
-        <div class="w-44 font-black text-md flex items-center">
+        <div class="w-60 font-black text-md flex items-center">
           <div class="w-10 h-10 rounded-full overflow-hidden">
             <img src="/assets/favicon.ico" class="w-20"/>
           </div>
-          <span class="ml-2 text-light">Homicipher</span>
+          <img src="/assets/logo.png" class="mt-4 w-32 md:w-40"/>
+          {# <span class="ml-2 text-light">Homicipher</span> #}
         </div>
     </a>
     <div class="flex items-center gap-4">
@@ -116,7 +117,7 @@
     <div class="text-center p-8 rounded-lg text-light">
         <h2 class="text-2xl font-bold mb-4">Get Homicipher Today</h2>
         <p class="mb-6">Ready to begin your journey into the mysterious world of Homicipher? Download now and start your adventure!</p>
-        <a href="https://store.steampowered.com/app/2302660/Homicipher/" target="_blank" class="py-3 px-6 bg-white text-light rounded-full font-bold hover:bg-red bg-opacity-20">Download Homicipher on Steam →</a>
+        <a href="/#download" class="py-3 px-6 bg-white text-light rounded-full font-bold hover:bg-red bg-opacity-20">Download Homicipher Now →</a>
     </div>
   </section>
   <footer class="bg-green bg-opacity-80 border-t-2 border-red py-5 flex flex-col justify-center items-center text-center">
@@ -150,6 +151,10 @@
       <a href="{{ '/privacy' | localizeUrl(lang) }}" class="text-red">
         {{ basicTranslation.privacy.pp }}
       </a>
+      <a href="https://github.com/666de6/homicipher" class="ml-4 text-red">
+        Github
+      </a>   
+
     </p>
   </footer>
 

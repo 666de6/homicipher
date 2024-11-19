@@ -8,8 +8,20 @@
           "url": "/"
         },
         {
+          "title": "Blog",
+          "url": "/blogentry/"
+        },
+        {
           "title": "Download",
           "url": "/#download"
+        },
+        {
+          "title": "Homicipher APK",
+          "url": "/#download"
+        },
+        {
+          "title": "Comments",
+          "url": "/#comments"
         }
       ],
       "play-button": "Play Now",
@@ -32,6 +44,18 @@
     "privacy": {
       "title": "Privacy Policy | Homicipher",
       "description": "Privacy policy for Homicipher. Learn how we protect your information while you explore our content about this unique horror language deciphering game."
+    },
+    "blogentry": {
+      "title": "Homicipher Blog & Guide | Homicipher",
+      "description": "Discover the world of Homicipher, a haunting adventure where survival depends on deciphering an alien language. Explore the secrets of this dark and mysterious game."
+    },
+    "homicipher-characters": {
+      "title": "Homicipher Characters Guide | Homicipher",
+      "description": "Learn about the mysterious beings that haunt Homicipher's world. Detailed profiles of Mr. Hood, Mr. Crawling, and other enigmatic characters who will determine your fate."
+    },
+    "homicipher-all-endings-walkthrough": {
+      "title": "Homicipher All Endings Walkthrough | Homicipher", 
+      "description": "Unlock every possible ending in Homicipher with our detailed guide. From character routes to secret endings, discover all the dark possibilities that await."
     }
   },
   "fr": {
