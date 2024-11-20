@@ -168,7 +168,13 @@
       const navLinks = document.querySelectorAll('.nav-link');
 
       navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentUrl) {
+        const href = link.getAttribute('href');
+        // 检查当前路径是否包含blog，如果是则高亮blog链接
+        if (currentUrlPathname.includes('/blog/') && href === '/blogentry/') {
+          link.classList.add('text-red');
+        }
+        // 其他精确匹配的情况
+        else if (href === currentUrl) {
           link.classList.add('text-red');
         }
       });
@@ -177,9 +183,16 @@
         const currentUrlHash = window.location.hash;
         const currentUrlPathname = window.location.pathname;
         const currentUrl = currentUrlHash ? currentUrlPathname + currentUrlHash : currentUrlPathname;
+        
         navLinks.forEach(link => {
           link.classList.remove('text-red');
-          if (link.getAttribute('href') === currentUrl) {
+          const href = link.getAttribute('href');
+          // 检查当前路径是否包含blog，如果是则高亮blog链接
+          if (currentUrlPathname.includes('/blog/') && href === '/blogentry/') {
+            link.classList.add('text-red');
+          }
+          // 其他精确匹配的情况
+          else if (href === currentUrl) {
             link.classList.add('text-red');
           }
         });
