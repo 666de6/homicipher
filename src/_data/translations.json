@@ -12,6 +12,10 @@
           "url": "/blogentry/"
         },
         {
+          "title": "Wiki",
+          "url": "/homicipher-wiki/"
+        },
+        {
           "title": "Download",
           "url": "/#download"
         },
@@ -48,6 +52,10 @@
     "blogentry": {
       "title": "Homicipher Guide & Blog | Homicipher",
       "description": "Comprehensive Homicipher guide helps you navigate the world of Homicipher, decipher alien languages, and uncover hidden secrets in this dark adventure."
+    },
+    "homicipher-wiki": {
+      "title": "Homicipher Wiki | Homicipher",
+      "description": "The definitive Homicipher wiki featuring comprehensive documentation of gameplay mechanics, character profiles, development history, and technical features."
     },
     "homicipher-characters": {
       "title": "Homicipher Characters Guide | Homicipher",
