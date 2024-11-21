@@ -27,7 +27,8 @@
   <link rel="canonical" href="https://homicipher.cc{{ page.url }}" />
 
 
-  <!-- <meta name="google-adsense-account" content="ca-pub-5331303144323541"> -->
+  <meta name="google-adsense-account" content="ca-pub-5331303144323541">
+ 
   <link id="favicon" rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/normalize.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="./toastify.min.css"> -->
@@ -49,6 +50,9 @@
     }
 
   </script>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5331303144323541" crossorigin="anonymous"></script>
+
 </head>
 <body class="bg-[url('/assets/homicipher.webp')] bg-cover w-full max-w-[1000px] m-auto px-4 text-yellow font-mono bg-fixed">
   {# FB comment #}
@@ -220,6 +224,31 @@
         languageMenu.classList.add('hidden');
       }
     }); #}
+
+  function copyPageUrl() {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      const toast = document.createElement('div');
+      toast.textContent = 'Link copied!';
+      toast.style.cssText = `
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgba(255, 255, 255, 0.9);
+          color: #000;
+          padding: 8px 16px;
+          border-radius: 4px;
+          z-index: 1000;
+      `;
+      document.body.appendChild(toast);
+      
+      setTimeout(() => {
+          toast.remove();
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  }
   </script>
   <!-- For Analysis -->
   <script defer data-domain="homicipher.cc" src="https://app.pageview.app/js/script.js"></script>
