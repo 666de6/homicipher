@@ -140,8 +140,21 @@
     </div>
 
   </header>
-  
-  <div class="bg-green bg-opacity-80 py-2 flex justify-center">
+
+  {# adsterra ads #}
+  <div class="bg-green bg-opacity-80 py-2 flex flex-col items-center md:flex-row justify-center gap-4">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '91725f5e3a11168d59693596388eb461',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    {# 320*50 #}
+    <script type="text/javascript" src="//www.highperformanceformat.com/91725f5e3a11168d59693596388eb461/invoke.js"></script>
+
     <script type="text/javascript">
       atOptions = {
         'key' : '91725f5e3a11168d59693596388eb461',
@@ -154,12 +167,13 @@
     {# 320*50 #}
     <script type="text/javascript" src="//www.highperformanceformat.com/91725f5e3a11168d59693596388eb461/invoke.js"></script>
   </div>
+  {# adsterra ads #}
 
   
   {{ content | safe }}
 
   {# adsterra Native Banner #}
-  <div id="container-bfe80d9fb682ec68985bd67507cc4320"></div>
+  <div id="container-bfe80d9fb682ec68985bd67507cc4320" class="bg-green bg-opacity-90 px-10 py-6"></div>
   {# adsterra Native Banner #}
 
   
