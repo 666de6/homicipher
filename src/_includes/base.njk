@@ -44,7 +44,8 @@
   <link rel="canonical" href="https://homicipher.cc{{ page.url }}" />
   
   {# 添加语言替代链接 #}
-  {% for lang in ["en", "zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %}
+  {# {% for lang in ["en", "zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %} #}
+  {% for lang in ["en", "zh"] %}
     {% if lang == "en" %}
       {% set langPath = "" %}
     {% else %}
