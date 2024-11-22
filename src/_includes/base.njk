@@ -77,11 +77,7 @@
     }
 
   </script>
-  {# adsense #}
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5331303144323541" crossorigin="anonymous"></script>
-  {# adsterra #}
-  <script async="async" data-cfasync="false" src="//pl25078164.profitablecpmrate.com/bfe80d9fb682ec68985bd67507cc4320/invoke.js"></script>
-  <div id="container-bfe80d9fb682ec68985bd67507cc4320"></div>
+  
 </head>
 <body class="bg-[url('/assets/homicipher.webp')] bg-cover w-full max-w-[1000px] m-auto px-4 text-yellow font-mono bg-fixed">
   {# FB comment #}
@@ -144,8 +140,12 @@
     </div>
 
   </header>
+  {# adsterra Native Banner #}
+  <div id="container-bfe80d9fb682ec68985bd67507cc4320"></div>
+  {# adsterra Native Banner #}
 
   {{ content | safe }}
+
   
   <section class="bg-green bg-gradient-to-l from-green to-red">
     <div class="text-center p-8 rounded-lg text-light">
@@ -183,7 +183,6 @@
       navLinks.forEach(link => {
         const href = link.getAttribute('href');
         // 检查当前路径是否包含blog，如果是则高亮blog链接
-        console.log(href, currentUrlPathname);
         if (currentUrlPathname.includes('/blog/') && href.includes('/blogentry/')) {
           link.classList.add('text-red');
         }
@@ -278,6 +277,12 @@
 
     gtag('config', 'G-BFNBX0T72E');
   </script>
+  {# adsense #}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5331303144323541" crossorigin="anonymous"></script>
+  {# adsterra #}
+  <script async="async" data-cfasync="false" src="//pl25078164.profitablecpmrate.com/bfe80d9fb682ec68985bd67507cc4320/invoke.js"></script>
+  <script type='text/javascript' src='//pl25080351.profitablecpmrate.com/06/43/bc/0643bce2e6a25722c2e1d180302bcf5a.js'></script>
+  {# adsterra #} 
 
 </body>
 </html>
