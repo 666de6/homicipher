@@ -5,7 +5,13 @@
     "bgCover": "/assets/mahjong-connect.avif",
     "iframeUrl": "https://mahjong-connect-1.game-files.crazygames.com/ruffle/mahjong-connect-1/1/634cb851-8253-41dd-a7c8-23a22ddf468b.html?v=1.307",
     "path": "/",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "麻将连连看",
+        "description": "经典的麻将连连看游戏"
+      }
+    }
   },
   "mahjong-solitaire": {
     "name": "Mahjong Solitaire",
@@ -13,7 +19,13 @@
     "bgCover": "/assets/mahjong-solitaire.avif",
     "iframeUrl": "https://www.crazygames.com/embed/mahjongg-solitaire",
     "path": "/mahjong-solitaire",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "麻将纸牌",
+        "description": "单人麻将纸牌游戏"
+      }
+    }
   },
   "mahjong-big": {
     "name": "Mahjong Big",
@@ -21,7 +33,13 @@
     "bgCover": "/assets/mahjong-big.avif",
     "iframeUrl": "https://www.crazygames.com/embed/mahjong-big",
     "path": "/mahjong-big",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "大麻将",
+        "description": "大型麻将消除游戏"
+      }
+    }
   },
   "mahjong-online": {
     "name": "Mahjong Online",
@@ -29,7 +47,13 @@
     "bgCover": "/assets/mahjong-online.avif",
     "iframeUrl": "https://www.crazygames.com/embed/mahjong-classic-webgl",
     "path": "/mahjong-online",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "在线麻将",
+        "description": "在线多人麻将游戏"
+      }
+    }
   },
   "piles-of-mahjong": {
     "name": "Piles of Mahjong",
@@ -37,7 +61,13 @@
     "bgCover": "/assets/piles-of-mahjong.avif",
     "iframeUrl": "https://www.crazygames.com/embed/piles-of-mahjong-jhb",
     "path": "/piles-of-mahjong",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "麻将堆",
+        "description": "堆叠式麻将消除游戏"
+      }
+    }
   },
   "mahjong-shanghai": {
     "name": "Mahjong Shanghai",
@@ -45,15 +75,27 @@
     "bgCover": "/assets/mahjong-shanghai.avif",
     "iframeUrl": "https://mahjong-shanghai-dynasty.game-files.crazygames.com/ruffle/mahjong-shanghai-dynasty/1/cb04cd1eaf98fc41850199607f4bafae.html?v=1.307",
     "path": "/mahjong-shanghai",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "上海麻将",
+        "description": "上海风格的麻将游戏"
+      }
+    }
   },
   "mahjong-tower": {
     "name": "Mahjong Tower",
     "description": "",
     "bgCover": "/assets/mahjong-tower.avif",
-    "iframeUrl": "https://mahjong-tower-2.game-files.crazygames.com/ruffle/mahjong-tower-2/1/mahjong-tower-2.html?v=1.307",
+    "iframeUrl": "https://www.crazygames.com/embed/mahjong-tower",
     "path": "/mahjong-tower",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "麻将塔",
+        "description": "塔式麻将消除游戏"
+      }
+    }
   },
   "mahjong-titans": {
     "name": "Mahjong Titans",
@@ -61,7 +103,12 @@
     "bgCover": "/assets/mahjong-titans.avif",
     "iframeUrl": "https://mahjong-titans.game-files.crazygames.com/ruffle/mahjong-titans/1/mahjong%20titans.html?v=1.307",
     "path": "/mahjong-titans",
-    "category": "all"
+    "category": "all",
+    "translations": {
+      "zh": {
+        "name": "麻将巨人",
+        "description": "巨人版麻将游戏"
+      }
+    }
   }
-
 }

@@ -1,46 +1,37 @@
 {
-  "en": {
-    "basic": {
-      "path": "/",
-      "navbar": [
-        {
-          "title": "Home",
-          "url": "/"
-        },
-        {
-          "title": "Blog",
-          "url": "/blogentry/"
-        },
-        {
-          "title": "Wiki",
-          "url": "/homicipher-wiki/"
-        },
-        {
-          "title": "Download",
-          "url": "/#download"
-        },
-        {
-          "title": "Homicipher APK",
-          "url": "/#download"
-        },
-        {
-          "title": "Comments",
-          "url": "/#comments"
-        }
-      ],
-      "play-button": "Play Now",
-      "full-screen-button": "Full Screen",
-      "hot-games": "Hot WEBFISHING Game Wiki games",
-      "other-games": "Try Other Popular Games Online",
-      "blog": {
-        "title": "WEBFISHING Game Wiki Blog",
-        "sub": ["Recent Posts"]
+
+  "meta": {
+    "lang": "en",
+    "dir": "ltr",
+    "locale": "en",
+    "language": "English"
+  },
+  "navigation": {
+    "path": "/",
+    "navbar": [
+      {
+        "title": "Home",
+        "url": "/"
       },
-      "privacy": {
-        "all": "All rights reserved",
-        "pp": "Privacy Policy"
+      {
+        "title": "Blog",
+        "url": "/blogentry/"
+      },
+      {
+        "title": "Wiki",
+        "url": "/homicipher-wiki/"
+      },
+      {
+        "title": "Download",
+        "url": "/#download"
+      },
+      {
+        "title": "Comments",
+        "url": "/#comments"
       }
-    },
+    ]
+  },
+  "pages": {
     "index": {
       "title": "Homicipher: A Unique Horror Adventure of Language and Mystery",
       "description": "Explore a haunting world in Homicipher where survival depends on decoding an alien language. Face mysterious beings and uncover dark secrets in this horror adventure."
@@ -72,46 +63,34 @@
     "mr-crawling-homicipher": {
       "title": "Homicipher Mr. Crawling is Stealing My Heart | Homicipher",
       "description": "A passionate player's perspective on Mr. Crawling, exploring the character's depth, memorable moments, and why this mysterious being has captured many hearts."
-    }
+    }  
   },
-  "fr": {
-    "basic": {
-      "path": "/fr",
-      "navbar": [
-        {
-          "title": "Accueil",
-          "url": "/fr"
-        },
-        {
-          "title": "Jeux Populaires",
-          "url": "/fr/hot-games"
-        },
-        {
-          "title": "Blog",
-          "url": "/fr/blog"
-        }
-      ],
-      "play-button": "Jouer Maintenant",
-      "full-screen-button": "Plein écran",
-      "hot-games": "Jeux WEBFISHING Game Wiki populaires",
-      "other-games": "Essayez d'autres jeux populaires en ligne",
-      "blog": {
-        "title": "Blog sur les Jeux de WEBFISHING Game Wiki",
-        "sub": ["Articles récents"]
-      },
-      "hot": {
-        "title": "Jeux de WEBFISHING Game Wiki populaires",
-        "sub": ["#1 Jeux de Mahjong"]
-      },
-      "privacy": {
-        "all": "Tous droits réservés",
-        "pp": "Politique de confidentialité"
-      }
-    },
-    "index": {
-      "title": "Les Meilleurs Jeux de WEBFISHING Game Wiki en Ligne Gratuits | WEBFISHING Game Wiki",
-      "description": "Découvrez WEBFISHING Game Wiki, un jeu de puzzle captivant qui combine la beauté des tuiles Mahjong traditionnelles avec des mécaniques de connexion innovantes. | WEBFISHING Game Wiki"
-    }
+  "common": {
+    "playNow": "Play Now",
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
     
+  },
+  "cta": {
+    "title": "Get Homicipher Today",
+    "description": "Ready to begin your journey into the mysterious world of Homicipher? Download now and start your adventure!",
+    "button": "Download Homicipher →"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "github": "Github",
+    "terms": "Terms of Service",
+    "contact": "Contact Us"
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Select Language",
+    "currentLanguage": "English"
   }
+
 } 

@@ -1,0 +1,62 @@
+---
+layout: base.njk
+---
+{# 获取当前语言 #}
+{% set currentLang = "en" %}
+{% for lang in ["zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %}
+  {% if page.url.startsWith("/" + lang + "/") %}
+    {% set currentLang = lang %}
+  {% endif %}
+{% endfor %}
+
+{# 获取当前页面的i18n数据 #}
+{% if i18n[currentLang] %}
+  {% set translations = i18n[currentLang] %}
+{% else %}
+  {% set translations = i18n["en"] %}
+{% endif %}
+
+<div class="w-full">
+  <div id="background" class="bg-green"></div>
+  <div class="flex justify-center items-center bg-green bg-opacity-80">
+    <div class="min-h-[100vh] w-full md:w-1/2 bg-blue02 flex">
+      <div class="w-full mt-12 px-8 whitespace-normal mx-auto mb-4">
+        <h1 class="text-xl font-bold mb-4 text-light">{{ translations.pages.privacy.title }}</h1>
+        <p class="mb-4 text-light">{{ translations.pages.privacy.effectiveDate }}</p>
+        <p class="text-light">
+          {{ translations.pages.privacy.welcome }}
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-light">{{ translations.pages.privacy.sections.information.title }}</h2>
+        <p class="text-light">
+          <span class="font-extrabold text-light">{{ translations.pages.privacy.sections.information.personal.title }}</span>
+          {{ translations.pages.privacy.sections.information.personal.content }}
+        </p>
+        
+        <p class="text-light">
+          <span class="font-extrabold text-light">{{ translations.pages.privacy.sections.information.nonPersonal.title }}</span>
+          {{ translations.pages.privacy.sections.information.nonPersonal.content }}
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-light">{{ translations.pages.privacy.sections.usage.title }}</h2>
+        <p class="text-light">
+          {{ translations.pages.privacy.sections.usage.content }}
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-light">{{ translations.pages.privacy.sections.protection.title }}</h2>
+        <p class="text-light">
+          {{ translations.pages.privacy.sections.protection.content }}
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-light">{{ translations.pages.privacy.sections.updates.title }}</h2>
+        <p class="text-light">
+          {{ translations.pages.privacy.sections.updates.content }}
+        </p>
+        
+        <a href="/zh/">
+          <button class="text-light hover:bg-red px-4 py-2 rounded-md">{{ translations.pages.privacy.backButton }}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

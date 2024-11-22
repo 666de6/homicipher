@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+{# 获取当前语言 #}
+{% set currentLang = "en" %}
+{% for lang in ["zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %}
+  {% if page.url.startsWith("/" + lang + "/") %}
+    {% set currentLang = lang %}
+  {% endif %}
+{% endfor %}
+
+{# 获取当前页面的i18n数据 #}
+{% if i18n[currentLang] %}
+  {% set translations = i18n[currentLang] %}
+{% else %}
+  {% set translations = i18n["en"] %}
+{% endif %}
+
+{% set currentPage = page.url | replace("/" + currentLang + "/", "/") | replace("/blog/", "") | replace("/", "") %}
+{% if currentPage %}
+  {% set currentPage = currentPage %}
+{% else %}
+  {% set currentPage = "index" %}
+{% endif %}
+
+<html lang="{{ translations.meta.lang }}" dir="{{ translations.meta.dir }}">
 <head>
-  {% set lang = page.url | startsWith("/fr/") | ternary("fr", "en") %}
-  {% set currentSlug = page.url | replace("/fr/", "") | replace("/en/", "") | replace("blog/", "") | replace("/", "") %}
-  {% set currentSlug = currentSlug if currentSlug else "index" %}
-  {% set pageTranslation = translations[lang][currentSlug] %}
-  {% set basicTranslation = translations[lang].basic %}
-  {# {% set subUrl = page.url | removeTrailingSlash %} #}
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   
-  <title>{{ pageTranslation.title }}</title>
-  <meta name="description" content="{{ pageTranslation.description }}">
-  <meta property="og:title" content="{{ pageTranslation.title }}" />
-  <meta property="og:description" content="{{ pageTranslation.description }}" />
+  <title>{{ translations.pages[currentPage].title }}</title>
+  <meta name="description" content="{{ translations.pages[currentPage].description }}">
+  
+  {# OpenGraph和Twitter卡片标签 #}
+  <meta property="og:title" content="{{ translations.pages[currentPage].title }}" />
+  <meta property="og:description" content="{{ translations.pages[currentPage].description }}" />
   <meta property="og:url" content="https://homicipher.cc{{ page.url }}" />
   <meta property="og:site_name" content="homicipher.cc" />
   <meta property="og:image" content="https://homicipher.cc/assets/homicipher.webp" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ pageTranslation.title }}" />
-  <meta name="twitter:description" content="{{ pageTranslation.description }}" />
+  <meta name="twitter:title" content="{{ translations.pages[currentPage].title }}" />
+  <meta name="twitter:description" content="{{ translations.pages[currentPage].description }}" />
   <meta name="twitter:image" content="https://homicipher.cc/assets/homicipher.webp" />
-  <meta name="keywords" content="Homicipher, horror game, language deciphering, mystery game, puzzle game, adventure game" />
   <link rel="canonical" href="https://homicipher.cc{{ page.url }}" />
-
-
+  
+  {# 添加语言替代链接 #}
+  {% for lang in ["en", "zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %}
+    {% if lang == "en" %}
+      {% set langPath = "" %}
+    {% else %}
+      {% set langPath = "/" + lang %}
+    {% endif %}
+    <link rel="alternate" hreflang="{{ lang }}" href="https://homicipher.cc{{ langPath }}{{ page.url | replace("/" + currentLang + "/", "/") }}" />
+  {% endfor %}
+  
   <meta name="google-adsense-account" content="ca-pub-5331303144323541">
  
   <link id="favicon" rel="icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -60,7 +86,7 @@
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
   {# FB comment #}
   <header class="bg-green bg-opacity-80 h-20 flex justify-between items-center py-4 px-4 border-b-2 border-red sticky top-0 z-[999]">
-    <a href="{{ '/' | localizeUrl(lang) }}" alt="Homicipher Game Guide">
+    <a href="{{ '/' | localizeUrl(currentLang) }}" alt="Homicipher Game Guide">
         <div class="w-60 font-black text-md flex items-center">
           <div class="w-10 h-10 rounded-full overflow-hidden">
             <img src="/assets/favicon.ico" class="w-20"/>
@@ -70,93 +96,73 @@
         </div>
     </a>
     <div class="flex items-center gap-4">
-      <nav id="nav-menu" class="hidden md:block">
-        <div class="shadow-md shadow-[#ffca4e] bg-green md:shadow-none flex flex-col fixed z-[9999] top-14 right-4 shadow-md md:static p-4 text-sm lg:text-md md:flex-row items-center gap-6 font-bold">
-          {% for item in basicTranslation.navbar %}
-            <a href="{{ item.url | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ item.title }}</a>
+      <nav id="nav-menu" class="hidden lg:block">
+        <div class="shadow-md shadow-red bg-green lg:shadow-none flex flex-col fixed z-[9999] top-14 right-4 shadow-md lg:static p-4 text-sm lg:text-md lg:flex-row items-center gap-6 font-bold">
+          {% for item in translations.navigation.navbar %}
+            <a href="{{ item.url | localizeUrl(currentLang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ item.title }}</a>
           {% endfor %}
-          
+          <!-- Language Dropdown -->
+          <div class="relative">
+            <button id="language-button" class="border border-red text-xs px-2 py-1 flex items-center space-x-1 hover:bg-red hover:bg-opacity-80 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
+              <span>{{ translations.languageSwitcher.currentLanguage }}</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="language-menu" class="absolute shadow-red shadow-md right-0 mt-2 w-28 lg:w-48 bg-green bg-opacity-80 rounded shadow-lg hidden">
+              {# {% for lang in ["en", "zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %} #}
+              {% for lang in ["en", "zh"] %}
+                {% if lang == "en" %}
+                  {% set langPath = "" %}
+                {% else %}
+                  {% set langPath = "/" + lang %}
+                {% endif %}
+                {% if i18n[lang] %}
+                  {% set langName = i18n[lang].meta.language %}
+                {% else %}
+                  {% set langName = lang %}
+                {% endif %}
+                <a href="{{ langPath }}{{ page.url | replace("/" + currentLang + "/", "/") }}"
+                  class="block px-4 py-2 hover:bg-red hover:bg-opacity-100 {% if lang == currentLang %}text-red hover:text-white{% endif %}">
+                  {{ langName }}
+                </a>
+              {% endfor %}
+            </div>
+          </div> 
         </div>
       </nav>
-      <button id="menu-toggle" class="md:hidden p-2">
+      <button id="menu-toggle" class="lg:hidden p-2">
         <img src="/assets/hum.svg" class="w-6 h-6" alt="unfold"/>
       </button>
-      {% set cleanedUrl = page.url | replace('/fr/', '/') | removeTrailingSlash %}
-      <!-- Language Dropdown -->
-      {# <div class="relative inline-block">
-        <button id="language-toggle" class="flex items-center gap-1 hover:text-red text-sm lg:text-md font-black font-sans">
-          <span>{{ lang | upper }}</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div id="language-menu" class="hidden absolute right-0 mt-2 py-2 w-32 bg-white rounded-md shadow-xl z-50">
-          <a href="{{ cleanedUrl }}" 
-              class="block px-4 py-2 text-sm hover:bg-gray-100 {% if lang === 'en' %}text-green{% endif %}">
-            English 🇺🇲
-          </a>
-          <a href="/fr{{ cleanedUrl }}" 
-              class="block px-4 py-2 text-sm hover:bg-gray-100 {% if lang === 'fr' %}text-green{% endif %}">
-            Français 🇫🇷
-          </a>
-        </div>
-      </div> #}
+     
+    
+
     </div>
 
   </header>
-
-  {# {% if gamedata[currentSlug] and currentSlug != 'index' %}
-    <nav class="mt-4 font-sans">
-      <a href="{{ '/' | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ basicTranslation.navbar[0].title }}</a>
-      >
-      <a href="{{ '/hot-games' | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ basicTranslation.navbar[1].title }}</a>
-      >
-      <a href="{{ gamedata[currentSlug].path | localizeUrl(lang) }}" class="nav-link hover:text-red hover:underline hover:decoration-2 hover:underline-offset-8">{{ gamedata[currentSlug].name }}</a>
-    </nav>
-  {% endif %} #}
 
   {{ content | safe }}
   
   <section class="bg-green bg-gradient-to-l from-green to-red">
     <div class="text-center p-8 rounded-lg text-light">
-        <h2 class="text-2xl font-bold mb-4">Get Homicipher Today</h2>
-        <p class="mb-6">Ready to begin your journey into the mysterious world of Homicipher? Download now and start your adventure!</p>
-        <a href="/#download" class="py-3 px-6 bg-white text-light rounded-full font-bold hover:bg-red bg-opacity-20">Download Homicipher →</a>
+        <h2 class="text-2xl font-bold mb-4">{{ translations.cta.title }}</h2>
+        <p class="mb-6">{{ translations.cta.description }}</p>
+        <a href="{{'/#download' | localizeUrl(currentLang)}}" class="py-3 px-6 bg-white text-light rounded-full font-bold hover:bg-red bg-opacity-20">{{ translations.cta.button }}</a>
     </div>
   </section>
   <footer class="bg-green bg-opacity-80 border-t-2 border-red py-5 flex flex-col justify-center items-center text-center">
-    {# <div class=" w-full mt-10">
-      <h2 class="text-xl mb-2 text-center lg:text-2xl text-yellow font-black font-sans underline decoration-double">{{ basicTranslation["other-games"] }}</h2>
-      <div class="flex flex-row flex-wrap items-center justify-center gap-2">
-        {% for item in linkedgames.gameList %}
-          <div class="w-24 h-24 bg-[url('{{ item.img }}')] bg-cover shadow-md rounded-lg bg-center cursor-pointer overflow-hidden relative">
-            <a href="{{ item.path }}" class="opacity-0 hover:opacity-100 bg-yellow bg-opacity-0 hover:bg-opacity-90 absolute w-full h-full top-0 left-0 z-99 flex items-end justify-start p-2">
-                <h3 class="text-xs font-bold text-green text-center">{{ item.name }}</h3>
-            </a>
-          </div>
-        {% endfor %}      
-        </div>
-    </div> #}
-
-    {# <div class="mt-20 flex justify-center text-sm text-green">
-      <a href="{{ page.url | replace('/fr/', '/') }}" class="mr-2 px-4 py-2 bg-yellow rounded hover:scale-110 transition duration-300">
-        English 🇺🇲
-      </a>
-      <a href="/fr{{ page.url | replace('/fr/', '/') }}" class="ml-2 px-4 py-2 bg-yellow rounded hover:scale-110 transition duration-300">
-        Français 🇫🇷
-      </a>
-    </div> #}
     <p class="text-xs mt-10">
       &copy;
       <span id="copyright"></span>
-      homicipher.cc. 
-      <span id="copyright-year">{{ basicTranslation.privacy.all }}</span>.
+      homicipher.cc
+      <span id="copyright-year">{{ translations.footer.copyright }}</span>
       
-      <a href="{{ '/privacy' | localizeUrl(lang) }}" class="text-red">
-        {{ basicTranslation.privacy.pp }}
+      <a href="{{ '/privacy' | localizeUrl(currentLang) }}" class="text-red">
+        {{ translations.footer.privacyPolicy }}
       </a>
       <a href="https://github.com/666de6/homicipher" class="ml-4 text-red">
-        Github
+        {{ translations.footer.github }}
       </a>   
 
     </p>
@@ -174,7 +180,8 @@
       navLinks.forEach(link => {
         const href = link.getAttribute('href');
         // 检查当前路径是否包含blog，如果是则高亮blog链接
-        if (currentUrlPathname.includes('/blog/') && href === '/blogentry/') {
+        console.log(href, currentUrlPathname);
+        if (currentUrlPathname.includes('/blog/') && href.includes('/blogentry/')) {
           link.classList.add('text-red');
         }
         // 其他精确匹配的情况
@@ -209,21 +216,28 @@
       navMenu.classList.toggle('hidden');
     });
 
-    // Language dropdown toggle
-    {# const languageToggle = document.getElementById('language-toggle');
-    const languageMenu = document.getElementById('language-menu');
+    // 语言切换功能
+    const langButton = document.getElementById('language-button');
+    const langMenu = document.getElementById('language-menu');
+    let isMenuOpen = false;
 
-    languageToggle.addEventListener('click', (e) => {
+    langButton.addEventListener('click', function(e) {
       e.stopPropagation();
-      languageMenu.classList.toggle('hidden');
-    }); #}
-
-    // Close dropdown when clicking outside
-    {# document.addEventListener('click', (e) => {
-      if (!languageMenu.contains(e.target) && !languageToggle.contains(e.target)) {
-        languageMenu.classList.add('hidden');
+      isMenuOpen = !isMenuOpen;
+      if (isMenuOpen) {
+        langMenu.classList.remove('hidden');
+      } else {
+        langMenu.classList.add('hidden');
       }
-    }); #}
+    });
+
+    // 点击其他地方关闭菜单
+    document.addEventListener('click', function(e) {
+      if (!langMenu.contains(e.target) && !langButton.contains(e.target)) {
+        langMenu.classList.add('hidden');
+        isMenuOpen = false;
+      }
+    });
 
   function copyPageUrl() {
     navigator.clipboard.writeText(window.location.href).then(() => {

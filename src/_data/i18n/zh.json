@@ -1,0 +1,757 @@
+{
+  "meta": {
+    "lang": "zh",
+    "dir": "ltr",
+    "locale": "zh",
+    "language": "简体中文"
+  },
+  "navigation": {
+    "path": "/zh/",
+    "navbar": [
+      {
+        "title": "首页",
+        "url": "/zh/"
+      },
+      {
+        "title": "博客",
+        "url": "/zh/blogentry/"
+      },
+      {
+        "title": "维基",
+        "url": "/zh/homicipher-wiki/"
+      },
+      {
+        "title": "下载",
+        "url": "/zh/#download"
+      },
+      {
+        "title": "Homicipher安卓版",
+        "url": "/zh/#download"
+      },
+      {
+        "title": "评论",
+        "url": "/zh/#comments"
+      }
+    ]
+  },
+  "pages": {
+    "index": {
+      "title": "Homicipher：一场关于语言与谜题的独特恐怖冒险",
+      "description": "在Homicipher的阴森世界中，生存取决于破译外星语言。面对神秘生物，揭开黑暗秘密，展开这场恐怖冒险。",
+      "hero": {
+       "title": "一场关于语言与谜题的独特恐怖冒险", 
+        "subtitle": "进入Homicipher，一款创新的语言解密冒险游戏，在这里恐怖与神秘交织。当你在神秘世界中醒来时，你需要掌握一门外星语言，同时避开与神秘生物的致命遭遇。你能揭开Homicipher的秘密并找到回家的路吗？",
+        "playButton": "立即体验Homicipher"
+      },
+      "about": {
+        "title": "关于Homicipher",
+        "content": {
+          "part1": "Homicipher是一款开创性的面向女性玩家的语言解密探索冒险游戏，将恐怖元素与独特的游戏机制完美融合。在Homicipher中，你将被传送到一个超自然领域，在这里，沟通成为生存的关键。",
+          "part2": "当你穿过Homicipher的神秘走廊时，你会遇到各种非人类生物，每个生物都有自己独特的密码语言。在Homicipher中，你的使命不仅仅是生存，更要理解——破译他们的奇怪语言可能意味着逃脱或永远被囚禁的区别。"
+        }
+      },
+      "features": {
+        "title": "Homicipher特色",
+        "list": [
+          {
+            "title": "独特的语言系统",
+            "description": "体验Homicipher创新的语言解密机制。通过上下文、手势和环境线索来学习和理解这门神秘的语言。"
+          },
+          {
+            "title": "氛围恐怖",
+            "description": "沉浸在精心设计的恐怖氛围中。每个场景都经过精心打造，让玩家感受到持续的紧张感和不安。"
+          },
+          {
+            "title": "多重结局",
+            "description": "您在 Homicipher 中的选择很重要。根据您的互动和对神秘语言的理解发现各种结局。"
+          }
+        ]
+      },
+      "gameplay": {
+        "title": "如何玩Homicipher",
+        "steps": [
+          {
+            "title": "探索与生存",
+            "description": "使用点击机制在 Homicipher 的怪异环境中导航。每一步都可能导致发现或危险。"
+          },
+          {
+            "title": "破译和学习",
+            "description": "通过收集单词、解释含义并通过互动建立词汇量来掌握 Homicipher 独特的语言系统。"
+          },
+          {
+            "title": "明智地选择",
+            "description": "在 Homicipher 中做出重要决定，这些决定会影响你与神秘生物的关系，并最终决定你的命运。"
+          },
+          {
+            "title": "追踪进度",
+            "description": "使用 Homicipher 的内置语言日志来记录和回顾您的发现，帮助您解开谜团。"
+          }
+        ]
+      },
+      "characters": {
+        "title": "认识Homicipher的主要角色",
+        "description": "在Homicipher的神秘世界中，你将遇到各种神秘的存在。每个角色都有自己独特的性格、动机和交流方式。你与他们的互动将塑造你的旅程，并可能决定你的命运。查看我们详细的角色介绍！",
+        "note": "注意：在Homicipher中，你与这些存在的互动可能会因你的选择和对他们语言的理解而显著不同。每个角色的真实本性和意图可能会在多次游戏过程中以不同方式揭示。",
+        "list": [
+          {
+            "name": "Mr. Hood",
+            "img": "/assets/mrhood.jpeg",
+            "description": "一个神秘人物，在 Homicipher 中充当你的初始向导。尽管胡德先生的外表让人想起死神，但他却表现出意想不到的友善，教你世界上奇怪语言的基础知识。他的保护本性和可靠的存在使他成为你旅程中至关重要的盟友。",
+            "keys": [
+              "库德雷有一种保护大哥的感觉",
+              "始终提供帮助并信守诺言",
+              "首先教你语言基础知识"
+            ]
+          },
+          {
+            "name": "Mr. Crawling",
+            "img": "/assets/mrcrawling.jpeg",
+            "description": "Mr.Crawling最初表现为一种威胁性的存在，但他的真实本性比第一印象所暗示的更为复杂。在 Homicipher 中，你终极的生死攸关的伙伴将不惜一切代价保护你。他驼背的身材和令人不安的动作可能会引起恐惧，但他的行为却透露出深深的奉献精神。",
+            "keys": [
+              "您全程最忠实的陪伴",
+              "始终在您身边，随时听候您的召唤",
+              "性格复杂，动机神秘"
+            ]
+          },
+          {
+            "name": "Mr. Silvair",
+            "img": "/assets/mrsilvair.png",
+            "description": "Silvair 先生是 Homicipher 中一位具有老师般存在的学术人物，他是您最有效的语言老师之一。尽管他最初的举止冷漠，但他却表现出令人惊讶的温柔本性。他对研究的热情延伸到研究语言和学习语言的人。",
+            "keys": [
+              "神秘语言的专家老师",
+              "他的方法学术且有条理",
+              "严厉的外表下隐藏着温柔的本质"
+            ]
+          },
+          {
+            "name": "Mr. Machete",
+            "img": "/assets/mrmachete.png",
+            "description": "体现了 Homicipher 中“强权即公理”哲学的强大存在。起初漠不关心，马谢特先生只对那些证明自己实力的人表现出兴趣。在他令人生畏的外表背后隐藏着意想不到的深度，只有那些赢得他尊重的人才能发现。",
+            "keys": [
+              "最看重力量和能力",
+              "挑战他人以证明自己",
+              "一旦赢得尊重，就会令人惊讶地关心"
+            ]
+          },
+          {
+            "name": "Mr. Gap",
+            "img": "/assets/mrgap.png",
+            "description": "一个混乱但可靠的盟友，经常出现在《Homicipher》的生死攸关的情况下。尽管盖普先生看上去难以捉摸，但他总是信守诺言。他聪明的天性和渊博的知识使他成为了解你过去的宝贵而神秘的信息来源。",
+            "keys": [
+              "尽管性质混乱，但高效可靠",
+              "在危险情况下提供重要帮助",
+              "掌握有关您背景故事的重要线索"
+            ]
+          },
+          {
+            "name": "Mr. Chopped",
+            "img": "/assets/mrchopped.png",
+            "description": "尽管经常成为其他怪物嘲笑的目标，切碎先生在《Homicipher》中仍然保持着可爱而充满活力的个性。在西尔维尔先生和Mr.Crawling身上找到了友谊，他们帮助他驾驭了自己独特的存在。他对头发特别讲究的迷人怪癖为这个霍米西弗角色增添了一丝轻浮。",
+            "keys": [
+              "尽管遇到逆境仍保持开朗和坚韧",
+              "与他人建立真正的友谊",
+              "对自己的外表非常讲究"
+            ]
+          }
+        ]
+      },
+      "download": {
+        "title": "下载Homicipher",
+        "platform": {
+          "pc": {
+            "title": "PC版本",
+            "description": "在您的计算机上体验全高清 Homicipher",
+            "button":"Steam下载 Homicipher →"
+          },
+          "android": {
+            "title": "Android版本",
+            "description": "在移动设备上随身携带 Homicipher",
+            "button":"下载 Homicipher APK →"
+          }
+        },
+        "note": {
+          "title": "安装注意事项",
+          "description": [
+            "对于 PC：通过 Steam 客户端安装，以实现自动更新和云保存",
+            "对于 Android APK：安装前在设备设置中启用“从未知来源安装”",
+            "请安装前确保您的设备满足最低系统要求"
+          ]
+        },
+        "system": {
+          "title": "系统要求",
+          "subtitle": "最低要求",
+          "subtitle2": "推荐设置",
+          "minimum": {
+            "os": "操作系统：Windows 7 或更高版本",
+            "cpu": "CPU：英特尔 i5 四核",
+            "ram": "内存：4GB",
+            "graphics": "显卡：NVIDIA GeForce GTX 750 Ti",
+            "storage": "存储：2 GB 可用空间"
+          },
+          "recommended": {
+            "os": "操作系统：Windows 10/11",
+            "cpu": "CPU：英特尔 i7 或等价",
+            "ram": "内存：8GB",
+            "graphics": "显卡：NVIDIA GeForce GTX 1060",
+            "storage": "存储：2 GB 可用空间"
+          }
+        }
+      },
+      "guide": {
+        "title": "Homicipher指南",
+        "list": [
+          {
+            "title": "Homicipher词典指南",
+            "date": "2024年11月20日",
+            "img": "/assets/pg1.jpeg",
+            "path": "/blog/homicipher-dictionary",
+            "description": "通过我们全面的homicipher词典指南掌握Homicipher的神秘语言。包含最新翻译和社区更新。"
+          },
+          {
+            "title": "Homicipher全结局攻略",
+            "date": "2024年11月19日",
+            "img": "/assets/endings.jpeg",
+            "path": "/blog/homicipher-all-endings-walkthrough",
+            "description": "通过我们详细的攻略解锁所有可能的Homicipher结局。从角色路线到所有结局，探索等待着您的所有黑暗可能。⚠️ 重大剧透！"
+          },
+          {
+            "title": "Homicipher角色介绍",
+            "date": "2024年11月19日",
+            "img": "/assets/mrcrawling.jpeg",
+            "path": "/blog/homicipher-characters",
+            "description": "了解在Homicipher世界中出没的神秘角色。包含胡德先生、Mr.Crawling等神秘角色的详细档案。"
+          }
+        ]
+      },
+      "comments": {
+        "title": "Homicipher评论"
+      }
+    },
+    "blogentry": {
+      "title": "Homicipher指南与博客 | Homicipher",
+      "description": "全面的Homicipher指南帮助您探索Homicipher的世界，破译外星语言，在这场黑暗冒险中发现隐藏的秘密。",
+      "pageTitle": "Homicipher指南与博客",
+      "subtitle": "探索Homicipher指南，揭开Homicipher神秘世界中的谜题和秘密。",
+      "latestGuide": "最新Homicipher指南",
+      "articles": {
+        "mrCrawling": {
+          "date": "2024年11月21日",
+          "title": "Mr.Crawling偷走了我的心",
+          "description": "这是一篇关于神秘而迷人的Mr.Crawling的个人感悟。我将分享我的经历，以及为什么这个角色在Homicipher社区中变得如此特别。",
+          "alt": "Mr.Crawling偷走了我的心",
+          "title_attr": "玩家对Mr.Crawling的看法"
+        },
+        "dictionary": {
+          "date": "2024年11月20日",
+          "title": "Homicipher词典指南",
+          "description": "通过我们全面的词典指南掌握Homicipher的神秘语言。包含最新翻译和社区更新，帮助解码游戏独特的交流系统。",
+          "alt": "Homicipher指南 - 词典",
+          "title_attr": "Homicipher指南 - 词典"
+        },
+        "characters": {
+          "date": "2024年11月19日",
+          "title": "Homicipher角色介绍",
+          "description": "认识在Homicipher世界中出没的神秘存在。包含胡德先生、Mr.Crawling等神秘角色的详细档案，这些角色将决定你的命运。",
+          "alt": "Homicipher指南 - 角色",
+          "title_attr": "Homicipher指南 - 角色"
+        },
+        "endings": {
+          "date": "2024年11月19日",
+          "title": "Homicipher全结局攻略",
+          "description": "通过我们详细的攻略解锁所有可能的Homicipher结局。从角色路线到秘密结局，探索等待着你的所有黑暗可能。⚠️ 重大剧透！",
+          "alt": "Homicipher指南 - 所有结局",
+          "title_attr": "Homicipher指南 - 所有结局"
+        }
+      }
+    },
+    "privacy": {
+      "title": "隐私政策 | Homicipher",
+      "description": "Homicipher的隐私政策。了解我们如何在您探索这款独特的恐怖语言解密游戏内容时保护您的信息。",
+      "effectiveDate": "生效日期：2024年11月18日",
+      "welcome": "欢迎访问Homicipher的官方网站。本隐私政策概述了我们在您浏览有关Homicipher这款独特恐怖语言解密游戏的内容时，如何收集、使用和保护您的信息。",
+      "sections": {
+        "information": {
+          "title": "1. 我们收集的信息",
+          "personal": {
+            "title": "a. 个人数据：",
+            "content": "在您与我们的Homicipher网站互动时，我们可能会收集您自愿提供的个人信息，例如在您订阅更新或联系我们的支持团队时提供的姓名和电子邮件地址。"
+          },
+          "nonPersonal": {
+            "title": "b. 非个人数据：",
+            "content": "我们使用网络cookie和分析工具来收集有关访问者如何与我们的Homicipher内容和功能互动的非个人数据。这有助于我们改善您的体验并优化我们的网站。"
+          }
+        },
+        "usage": {
+          "title": "2. 信息使用",
+          "content": "我们使用收集的信息来增强您在Homicipher网站上的体验并改进我们的内容。这包括个性化内容、分析网站使用情况和提供游戏更新。除了基本的网站分析和必要服务所需外，您的信息不会与第三方共享。"
+        },
+        "protection": {
+          "title": "3. 数据保护",
+          "content": "在您浏览我们的Homicipher内容时，我们采用行业标准的安全措施来保护您的数据。这包括安全的SSL加密、定期安全审计和严格的数据访问控制。您的隐私和安全对我们至关重要。"
+        },
+        "updates": {
+          "title": "4. 隐私政策更新",
+          "content": "本隐私政策可能会不时更新。如果您对我们的隐私政策或我们如何处理您在使用Homicipher网站时的数据有任何疑问，请通过ada.666de6@proton.me与我们联系。"
+        },
+        "contact": {
+          "title": "5. 联系我们",
+          "content": "如果您对我们的隐私政策或我们如何处理您在使用Homicipher网站时的数据有任何疑问，请通过ada.666de6@proton.me与我们联系。"
+        }
+      },
+      "backButton": "<< 返回Homicipher"
+    },
+
+    "homicipher-wiki": {
+      "title": "Homicipher维基 | Homicipher",
+      "description": "权威的Homicipher维基，包含游戏机制、角色档案、开发历史和技术特性的全面文档。",
+      "pageTitle": "Homicipher维基",
+      "navigation": {
+        "title": "导航",
+        "mainPage": "主页",
+        "blog": "博客",
+        "download": "下载",
+        "comments": "评论"
+      },
+      "infoBox": {
+        "title": "游戏信息",
+        "gameType": "游戏类型",
+        "developer": "开发者",
+        "publisher": "发行商",
+        "status": "状态",
+        "releaseDate": "发布日期",
+        "genre": "类型",
+        "platform": "平台",
+        "digitalPlatform": "数字平台",
+        "values": {
+          "type": "电子游戏",
+          "developer": "八名木（yatsunagi）",
+          "publisher": "Gamera Games",
+          "status": "已发布",
+          "releaseDate": "2024年11月1日",
+          "genre": "动作",
+          "platform": "Microsoft Windows",
+          "digitalPlatform": "Steam"
+        }
+      },
+      "contents": {
+        "title": "目录",
+        "gameplay": "游戏玩法",
+        "development": "开发",
+        "characters": "角色"
+      },
+      "overview": "欢迎来到Homicipher维基，这是一个关于独特恐怖冒险游戏的综合指南，该游戏将语言破译元素与生存恐怖相结合。玩家必须在掌握外星语言系统的同时探索神秘世界。",
+      "gameplay": {
+        "title": "游戏玩法",
+        "description": "核心游戏机制围绕着破译神秘信息，同时避开危险实体。玩家必须管理资源、解决谜题，并做出影响生存的关键决定。",
+        "coreMechanics": {
+          "title": "核心机制",
+          "items": [
+            "语言系统 - 掌握独特的交流系统与其他角色互动",
+            "生存恐怖 - 在管理有限资源的同时探索危险环境",
+            "解谜 - 破译复杂代码并解决环境谜题",
+            "角色互动 - 与各种实体建立关系，影响游戏进程"
+          ]
+        },
+        "progression": {
+          "title": "游戏进程",
+          "items": [
+            "多重结局 - 你的选择和关系影响故事的结局",
+            "技能发展 - 在游戏过程中提升语言破译能力",
+            "环境叙事 - 通过探索揭开世界的奥秘"
+          ]
+        }
+      },
+      "development": {
+        "title": "开发",
+        "description": "Homicipher由八名木（yatsunagi）开发，Gamera Games发行。游戏开发始于创造一种独特的恐怖体验的愿景，将语言谜题与生存元素相结合。",
+        "history": {
+          "title": "开发历史",
+          "items": [
+            "初始概念 - 游戏将恐怖与语言破译相结合的独特概念在开发早期就已确立",
+            "开发周期 - 游戏经过深入开发以完善其核心机制和氛围",
+            "试玩版 - 计划于2023年6月1日在Steam平台发布",
+            "正式版 - 计划于2024年11月1日在Steam平台发布"
+          ]
+        },
+        "features": {
+          "title": "技术特性",
+          "items": [
+            "自定义游戏内通信语言系统",
+            "恐怖氛围元素和音效设计",
+            "与叙事进程相结合的解谜机制"
+          ]
+        }
+      },
+      "characters": {
+        "title": "游戏角色",
+        "description": "该游戏具有多个神秘实体，每个实体都有自己独特的行为和通信模式。在我们详细的角色介绍中了解有关每个角色的更多信息。",
+        "list": [
+          {
+            "name": "Mr. Hood",
+            "url": "/blog/homicipher-characters/#mrhood",
+            "description": "一个像死神一样的神秘人物，作为你最初的向导，教你世界上奇怪语言的基础知识"
+          },
+          {
+            "name": "Mr. Crawling",
+            "url": "/blog/homicipher-characters/#mrcrawling",
+            "description": "你的终极同伴，尽管他的外表令人不安，但他会尽一切努力保护你"
+          },
+          {
+            "name": "Mr. Silvair",
+            "url": "/blog/homicipher-characters/#mrsilvair",
+            "description": "一位具有老师般风度的学术人物，是您最有效的语言老师之一"
+          },
+          {
+            "name": "Mr. Machete",
+            "url": "/blog/homicipher-characters/#mrmachete",
+            "description": "一个强大的存在，重视力量高于一切，只对那些证明自己价值的人表现出兴趣"
+          },
+          {
+            "name": "Mr. Gap",
+            "url": "/blog/homicipher-characters/#mrgap",
+            "description": "一个混乱但可靠的盟友，在关键时刻出现，提供有关你过去的重要信息"
+          },
+          {
+            "name": "Mr. Chopped",
+            "url": "/blog/homicipher-characters/#mrchopped",
+            "description": "一个可爱的角色，在逆境中仍保持开朗的性格，以对头发的讲究而闻名"
+          },
+          {
+            "name": "Mr. Scarletella",
+            "url": "/blog/homicipher-characters/#mrscarletella",
+            "description": "一位神秘的追求者，其真实身份和动机始终笼罩在神秘之中"
+          }
+        ]
+      }
+    },
+    "homicipher-characters": {
+      "title": "Homicipher角色介绍 | Homicipher",
+      "description": "了解在Homicipher世界中出没的神秘角色。包含胡德先生、Mr.Crawling等神秘角色的详细档案。",
+      "pageTitle": "Homicipher角色：神秘世界中的存在",
+      "lastUpdated": "最后更新：2024年11月19日",
+      "introduction": {
+        "text": "嘿！作为一个在Homicipher中花费了无数时间了解每个角色的玩家，我想创建这份指南来帮助你了解在游戏中将会遇到的所有迷人存在。每个你遇到的角色都有自己的怪癖和神秘的说话方式 - 相信我，你与他们的互动方式可能会完全改变你的游戏结局！我已经通过多次游戏记录下了我所了解的一切。",
+        "warning": "⚠️ 友情提示！\n虽然我很想分享这些令人惊叹的角色的一切，但在你第一次游戏时可能想要暂时不看这份指南。自己发现这些角色的秘密是Homicipher如此特别的原因之一！"
+      },
+      "mainCharacters": {
+        "title": "主要角色",
+        "characters": {
+          "mrhood": {
+            "name": "Mr. Hood",
+            "img": "/assets/mrhood.jpeg",
+            "description": "一个神秘的人物，是你在Homicipher中的初始向导。尽管他的外表让人联想到死神，令人生畏，但胡德先生却展现出意想不到的善意，教你这个世界奇怪语言的基础知识。",
+            "characteristics": {
+              "title": "Mr. Hood的特点:",
+              "items": [
+                "表面冷淡但内心温暖，有着保护欲强的大哥哥气质",
+                "始终在帮助你，言出必行",
+                "第一个教你语言基础的导师"
+              ]
+            }
+          },
+          "mrcrawling": {
+            "name": "Mr. Crawling",
+            "img": "/assets/mrcrawling.jpeg",
+            "description": "最初看起来是个威胁的存在，但Mr.Crawling的真实本性比第一印象要复杂得多。他是你最终的生死与共的伙伴，会不惜一切代价保护你。尽管他佝偻的身影和令人不安的动作可能会引起恐惧，但他的行动却展现出深深的忠诚。",
+            "characteristics": {
+              "title": "Mr.Crawling的特点：",
+              "items": [
+                "整个旅程中最忠诚的伙伴",
+                "始终在你身边，随叫随到",
+                "复杂的角色，带有神秘的动机"
+              ]
+            }
+          },
+          "mrsilvair": {
+            "name": "Mr. Silvair",
+            "img": "/assets/mrsilvair.png",
+            "description": "一位带有老师气质的学者型人物，是你最有效的语言老师之一。尽管他最初的态度有些冷淡，但却逐渐展现出令人惊讶的温和本性。他对语言的热情感染着每一个学生。",
+            "characteristics": {
+              "title": "Mr.Silvair的特点：",
+              "items": [
+                "严格但富有耐心的导师",
+                "对语言学充满热情",
+                "渐渐展现温和的一面"
+              ]
+            }
+          },
+          "mrmachete": {
+            "name": "Mr. Machete",
+            "img": "/assets/mrmachete.png",
+            "description": "一个强大的存在，重视力量高于一切。他只对那些能证明自己价值的人表现出兴趣，这使得与他的每次互动都充满挑战性。",
+            "characteristics": {
+              "title": "Mr.Machete的特点：",
+              "items": [
+                "重视实力和证明",
+                "对弱者毫无兴趣",
+                "具有挑战性的互动"
+              ]
+            }
+          },
+          "mrgap": {
+            "name": "Mr. Gap",
+            "img": "/assets/mrgap.png",
+            "description": "一个混乱但可靠的盟友，经常出现在《Homicipher》的生死攸关的情况下。尽管盖普先生看上去难以捉摸，但他总是信守诺言。他聪明的天性和渊博的知识使他成为了解你过去的宝贵而神秘的信息来源。",
+            "characteristics": {
+              "title": "Mr. Gap的特点：",
+              "items": [
+                "混乱但可靠的盟友",
+                "在关键时刻出现",
+                "提供有关你过去的重要信息"
+              ]
+            }
+          },
+          "mrchopped": {
+            "name": "Mr. Chopped",
+            "img": "/assets/mrchopped.png",
+            "description": "尽管经常成为其他怪物嘲笑的目标，切碎先生在《Homicipher》中仍然保持着可爱而充满活力的个性。在西尔维尔先生和Mr.Crawling身上找到了友谊，他们帮助他驾驭了自己独特的存在。他对头发特别讲究的迷人怪癖为这个霍米西弗角色增添了一丝轻浮。",
+            "characteristics": {
+              "title": "Mr.Chopped的特点：",
+              "items": [
+                "可爱的角色",
+                "在逆境中仍保持开朗的性格",
+                "以对头发的讲究而闻名"
+              ]
+            }
+          },
+          "mrscarletella": {
+            "name": "Mr. Scarletella",
+            "img": "/assets/mrscarletella.jpeg",
+            "description": "一个神秘而难以捉摸的人物，其真实身份和动机始终笼罩在迷雾中。他对主角的执着追寻为游戏增添了一层心理恐怖的元素，让玩家不断质疑他与主角之间的联系。",
+            "characteristics": {
+              "title": "Mr. Scarletella的特点：",
+              "items": [
+                "对主角有着执着的关注",
+                "出现在紧张的追逐场景中",
+                "与主角有着神秘的联系",
+                "动机始终不明"
+              ]
+            }
+          }
+        }
+      },
+      "relationships": {
+        "title": "角色关系",
+        "description": "这些Homicipher角色之间的互动创造了一个复杂的关系网，你将在旅程中逐渐发现。每个独特的角色都为游戏丰富的叙事织锦贡献了一份力量：",
+        "connections": {
+          "allies": "🤝 亲密盟友：胡德先生和Mr.Crawling",
+          "mentorship": "📚 师徒关系：希尔维尔先生和乔普德先生",
+          "rivals": "⚔️ 对手：马谢特先生和盖普先生",
+          "protectors": "🤲 保护者：胡德先生、Mr.Crawling和希尔维尔先生"
+        }
+      },
+      "relatedReading": {
+        "title": "相关阅读",
+        "articles": {
+          "endings": {
+            "title": "Homicipher全结局攻略",
+            "description": "发现所有可能的结局以及如何达成它们",
+            "path": "/blog/homicipher-all-endings-walkthrough",
+            "img": "/assets/endings.jpeg"
+          },
+          "dictionary": {
+            "title": "Homicipher词典指南：解密神秘语言",
+            "description": "学习Homicipher词典及其含义",
+            "path": "/blog/homicipher-dictionary",
+            "img": "/assets/pg1.jpeg"
+          },
+          "crawling": {
+            "title": "Mr.Crawling偷走了我的心",
+            "description": "了解Mr.Crawling如何影响你在Homicipher中的选择",
+            "path": "/blog/mr-crawling-homicipher",
+            "img": "/assets/crawling.jpeg"
+          }
+        }
+      }
+    },
+    "homicipher-all-endings-walkthrough": {
+      "title": "Homicipher全结局攻略 | Homicipher",
+      "description": "通过我们详细的攻略解锁所有可能的Homicipher结局。从角色路线到所有结局，探索等待着您的所有黑暗可能。",
+      "pageTitle": "Homicipher全结局攻略",
+      "lastUpdated": "最后更新：2024年11月19日",
+      "content": {
+        
+      },
+      "relatedReading": {
+        "title": "相关阅读",
+        "articles": {
+          "characters": {
+            "title": "Homicipher角色介绍：神秘世界中的存在",
+            "description": "了解Homicipher中的角色及其独特个性",
+            "path": "/blog/homicipher-characters",
+            "img": "/assets/mrcrawling.jpeg"
+          },
+          "crawling": {
+            "title": "Mr.Crawling偷走了我的心",
+            "description": "了解Mr.Crawling如何影响你在Homicipher中的选择",
+            "path": "/blog/mr-crawling-homicipher",
+            "img": "/assets/crawling.jpeg"
+          },
+          "dictionary": {
+            "title": "Homicipher词典指南：解密神秘语言",
+            "description": "学习Homicipher词典及其含义",
+            "path": "/blog/homicipher-dictionary",
+            "img": "/assets/pg1.jpeg"
+          }
+        }
+      }
+    },
+    "homicipher-dictionary": {
+      "title": "Homicipher词典指南 | Homicipher",
+      "description": "通过我们全面的homicipher词典指南掌握Homicipher的神秘语言。包含最新翻译和社区更新。",
+      "pageTitle": "Homicipher词典（中文版）：解密神秘语言",
+      "lastUpdated": "最后更新：2024年11月20日",
+      "introduction": {
+        "text1": "各位玩家好！经过无数小时的游戏时间和大量笔记记录，我终于整理出了这份完整的Homicipher词典指南。相信我，弄清楚所有这些翻译并不容易 - 这需要大量的游戏通关经验，仔细注意上下文线索，并与社区中的其他玩家交叉验证，以确保所有内容的准确性。",
+        "text2": "在本指南中，我尽最大努力为遇到的每个单词和短语提供最准确的翻译。虽然你可能会找到更适合你的略微不同的含义（这完全没问题！），但这些是对我来说最有意义，并且似乎最符合游戏上下文的翻译。",
+        "warning": "⚠️ 注意！\n作为一个已经经历过多次通关的玩家，我强烈建议你先自己体验游戏的语言之谜。自己找出答案是乐趣的一半！本指南包含重要的语言剧透，可能会影响你的首次游戏体验。"
+      },
+      "dictionary": {
+        "title": "Homicipher词典页面",
+        "pages": [
+          {
+            "number": "第1页",
+            "img": "/assets/pg1.jpeg",
+            "alt": "Homicipher词典 - 第1页",
+            "title": "Homicipher词典 - 第一组翻译"
+          },
+          {
+            "number": "第2页",
+            "img": "/assets/pg2.jpeg",
+            "alt": "Homicipher词典 - 第2页",
+            "title": "Homicipher词典 - 第二组翻译"
+          },
+          {
+            "number": "第3页",
+            "img": "/assets/pg3.jpeg",
+            "alt": "Homicipher词典 - 第3页",
+            "title": "Homicipher词典 - 第三组翻译"
+          },
+          {
+            "number": "第4页",
+            "img": "/assets/pg4.jpeg",
+            "alt": "Homicipher词典 - 第4页",
+            "title": "Homicipher词典 - 第四组翻译"
+          },
+          {
+            "number": "第5页",
+            "img": "/assets/pg5.jpeg",
+            "alt": "Homicipher词典 - 第5页",
+            "title": "Homicipher词典 - 第五组翻译"
+          },
+          {
+            "number": "第6页",
+            "img": "/assets/pg6.jpeg",
+            "alt": "Homicipher词典 - 第6页",
+            "title": "Homicipher词典 - 第六组翻译"
+          },
+          {
+            "number": "第7页",
+            "img": "/assets/pg7.jpeg",
+            "alt": "Homicipher词典 - 第7页",
+            "title": "Homicipher词典 - 第七组翻译"
+          },
+          {
+            "number": "第8页",
+            "img": "/assets/pg8.jpeg",
+            "alt": "Homicipher词典 - 第8页",
+            "title": "Homicipher词典 - 第八组翻译"
+          }
+        ]
+      },
+      "credits": {
+        "title": "致谢",
+        "description": "这本原始的 Homicipher 词典指南由 Kia 创建。访问作者的个人资料，了解更多 Homicipher 指南和定期词典更新。"
+      },
+      "relatedReading": {
+        "title": "相关阅读",
+        "articles": {
+          "characters": {
+            "title": "Homicipher角色：神秘世界中的存在",
+            "description": "了解Homicipher中的角色及其独特个性",
+            "path": "/blog/homicipher-characters",
+            "img": "/assets/mrcrawling.jpeg"
+          },
+          "endings": {
+            "title": "Homicipher全结局攻略",
+            "description": "发现所有可能的结局以及如何达成它们",
+            "path": "/blog/homicipher-all-endings-walkthrough",
+            "img": "/assets/endings.jpeg"
+          },
+          "crawling": {
+            "title": "Mr.Crawling偷走了我的心",
+            "description": "了解Mr.Crawling如何影响你在Homicipher中的选择",
+            "path": "/blog/mr-crawling-homicipher",
+            "img": "/assets/crawling.jpeg"
+          }
+        }
+      }
+    },
+    "mr-crawling-homicipher": {
+      "title": "Homicipher Mr.Crawling偷走了我的心 | Homicipher",
+      "description": "一位热情玩家对Mr.Crawling的见解，探索这个角色的深度、难忘时刻，以及为什么这个神秘的存在吸引了许多人的心。",
+      "pageTitle": "Mr.Crawling偷走了我的心",
+      "lastUpdated": "最后更新：2024年11月21日",
+      "content": {
+        "intro": "好吧，我必须要谈谈Mr.Crawling。说真的，我已经玩过Homicipher好几遍了，但我依然无法忘怀这个角色的出色设计。每次重新开始游戏，当他第一次出现时，我的心都会漏跳一拍。他身上有一种神秘的魅力，我很难用言语来形容（不过在这篇博文中我一定要试试！）",
+        "entrance": "首先，我们能聊聊他的出场方式吗？他突然出现在那条昏暗的走廊里，以一种特殊的方式移动，既令人不安又优雅。我记得第一次看到他时，我真的倒吸了一口气。然后当他开始用那种神秘的语言说话时...我立刻就被吸引住了。我花了好几个小时试图破译他说的每一个词，仔细记下每一个短语和它可能的含义。",
+        "character_depth": "但让我着迷的不仅仅是Mr.Crawling的神秘气质 - 而是随着游戏进程揭示的他的性格深度。一开始，他看起来就像一个神秘的、可能具有威胁性的人物（光是这个名字就够了！），但当你破译更多的对话并理解他真正的意图时，你开始看到他的另一面。他subtle地试图引导你，在他神秘的信息中留下线索...这真的是绝妙的游戏设计。",
+        "library_scene": "别让我说起图书馆那一幕！（小剧透警告！）当他揭示为什么一直跟着你，你终于明白那些看似随机的相遇背后的含义时...我不得不暂停游戏缓一缓。开发者们把他的个人故事编织进更大的叙事中的方式简直是完美。",
+        "endings": "我现在已经达成了所有结局（是的，我就是这么投入），每个结局都展示了他性格的不同方面。'午夜汇聚'结局彻底击垮了我 - 用最好的方式。如果你一直注意游戏中所有细微的线索，他的角色弧线如何首尾呼应...简直太惊人了。",
+        "character_design": "我特别喜欢他的角色设计如何反映了他的个性。那些当你不直视他时似乎会移动的复杂图案，随着你获得他的信任而变得更加流畅的动作 - 正是这些小细节让他显得如此真实难忘。美术团队值得为此受到赞扬。",
+        "dialogue": "另外，我们能欣赏一下他的对话是如何根据你的选择而改变的吗？我多次通关游戏，每次都做出不同的选择，我仍在发现新的台词和反应。我最喜欢的是当你在花园场景中选择与他分享你自己的秘密时 - 他的回应出乎意料地脆弱和感人。正是这些时刻让他感觉不像一个游戏角色，而更像一个你真正认识的人。",
+        "encouragement": "我知道有些玩家一开始会觉得他很吓人（我朋友第一次见到他时尖叫着退出了游戏），但相信我 - 花时间去理解他，破译他的信息，关注那些小细节。Mr.Crawling不仅仅是另一个恐怖角色；他是一个精心打造的人物，拥有多层次的深度，让每次游戏体验都比上一次更有收获。",
+        "conclusion": "对于刚开始玩Homicipher的人来说，我羡慕你们能第一次体验Mr.Crawling。而对于那些已经见过他的人 - 好吧，你们理解我为什么这么着迷，对吧？",
+        "personal_note": "写完这篇文章后，我意识到我可能对Mr.Crawling的喜爱表达得有点过头了！但这正是Homicipher的特别之处 - 它创造出能让玩家产生如此真诚热情的角色。如果你想了解更多关于他的对话和故事，一定要查看我们的Homicipher词典和角色介绍。"
+      },
+      "relatedReading": {
+        "title": "相关阅读",
+        "articles": {
+          "characters": {
+            "title": "Homicipher角色：神秘世界中的存在",
+            "description": "了解Homicipher中的角色及其独特个性",
+            "path": "/blog/homicipher-characters",
+            "img": "/assets/mrcrawling.jpeg"
+          },
+          "endings": {
+            "title": "Homicipher全结局攻略",
+            "description": "发现所有可能的结局以及如何达成它们",
+            "path": "/blog/homicipher-all-endings-walkthrough",
+            "img": "/assets/endings.jpeg"
+          },
+          "dictionary": {
+            "title": "Homicipher词典指南：解密神秘语言",
+            "description": "学习Homicipher词典及其含义",
+            "path": "/blog/homicipher-dictionary",
+            "img": "/assets/pg1.jpeg"
+          }
+        }
+      }
+    }
+  },
+  "common": {
+    "playNow": "立即游戏",
+    "readMore": "阅读更多",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "back": "返回",
+    "next": "下一页",
+    "previous": "上一页"
+  },
+  "cta": {
+    "title": "立即获取 Homicipher",
+    "description": "准备好开始您在 Homicipher 神秘世界中的冒险旅程？现在下载并开始您的冒险！",
+    "button": "下载 Homicipher →"
+  },
+  "footer": {
+    "copyright": "版权所有。",
+    "privacyPolicy": "隐私政策",
+    "terms": "服务条款",
+    "contact": "联系我们"
+  },
+  "languageSwitcher": {
+    "selectLanguage": "选择语言",
+    "currentLanguage": "简体中文"
+  }
+}

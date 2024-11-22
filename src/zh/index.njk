@@ -1,0 +1,220 @@
+---
+layout: base.njk
+---
+{# 获取当前语言 #}
+{% set currentLang = "en" %}
+{% for lang in ["zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %}
+  {% if page.url.startsWith("/" + lang + "/") %}
+    {% set currentLang = lang %}
+  {% endif %}
+{% endfor %}
+
+{# 获取当前页面的i18n数据 #}
+{% if i18n[currentLang] %}
+  {% set translations = i18n[currentLang] %}
+{% else %}
+  {% set translations = i18n["en"] %}
+{% endif %}
+
+<main class="bg-green bg-opacity-90 px-10 py-6 text-md mx-auto font-mono text-white container max-w-6xl">
+    <section class="hero-section text-center">
+        <h1 class="text-xl md:text-2xl font-black mb-4"><a href="/zh/homicipher-wiki" class="text-red underline">Homicipher</a>: {{ translations.pages.index.hero.title }}</h1>
+        <p class="game-subtitle mb-4">{{ translations.pages.index.hero.subtitle }}</p>
+        
+        <div class="bg-[url('/assets/homicipher.webp')] aspect-video bg-cover p-4 rounded-lg mb-6 flex flex-col items-center justify-center">
+            <div class="flex gap-6 text-center mb-20">
+                <a href="/zh/#download" class="group relative mt-10 inline-block bg-red hover:bg-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-lg overflow-hidden">
+                    <span class="relative z-10 group-hover:animate-textglitch">{{ translations.pages.index.hero.playButton }}</span>
+                    <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-100">
+                        <div class="absolute inset-0 animate-glitchbg bg-blood"></div>
+                        <div class="absolute inset-0 animate-glitchbg2 bg-green delay-75"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mt-10 text-center" id="about">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.about.title }}</h2>
+        <div class="p-4 rounded-lg">
+            <p class="mb-4"><a href="/zh/homicipher-wiki" class="text-red underline">Homicipher</a> {{ translations.pages.index.about.content.part1 }}</p>
+            <p>{{ translations.pages.index.about.content.part2 }}</p>
+        </div>
+    </section>
+
+    <section class="mt-10 text-center" id="features">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.features.title }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="feature-card p-4 bg-red bg-opacity-20 rounded-lg">
+                <h3 class="text-sm font-bold text-red mb-3">{{ translations.pages.index.features.list[0].title }}</h3>
+                <p>{{ translations.pages.index.features.list[0].description }}</p>
+            </div>
+            <div class="feature-card p-4 bg-red bg-opacity-20 rounded-lg">
+                <h3 class="text-sm font-bold text-red mb-3">{{ translations.pages.index.features.list[1].title }}</h3>
+                <p>{{ translations.pages.index.features.list[1].description }}</p>
+            </div>
+            <div class="feature-card p-4 bg-red bg-opacity-20 rounded-lg">
+                <h3 class="text-sm font-bold text-red mb-3">{{ translations.pages.index.features.list[2].title }}</h3>
+                <p>{{ translations.pages.index.features.list[2].description }}</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="mt-10 text-center" id="gameplay">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.gameplay.title }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {%for step in translations.pages.index.gameplay.steps%}
+                <div class="border-2 border-red bg-green p-4 rounded-lg">
+                    <h3 class="text-sm font-bold text-red mb-2">{{ step.title }}</h3>
+                    <p>{{ step.description }}</p>
+                </div>
+            {%endfor%}
+            
+        </div>
+    </section>
+
+
+    <section class="mt-10 text-center" id="characters">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.characters.title }}</h2>
+        <p class="mb-6">{{ translations.pages.index.characters.description }}</p>
+        
+        <div class="flex flex-col gap-8">
+            {% set reverse = false %}
+            {% for character in translations.pages.index.characters.list %}
+                <div class="flex flex-col md:flex-row gap-4 p-4 rounded-lg items-center">
+                    {% if reverse %}
+                        <div class="md:w-1/2">
+                            <h3 class="text-lg font-bold text-red mb-2">{{ character.name }}</h3>
+                            <p class="mb-3">{{ character.description }}</p>
+                            <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
+                                <li>{{ character.keys[0] }}</li>
+                                <li>{{ character.keys[1] }}</li>
+                                <li>{{ character.keys[2] }}</li>
+                            </ul>
+                        </div>
+                        <img src="{{ character.img }}" alt="{{ character.name }}" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
+                    {% else %}
+                        <img src="{{ character.img }}" alt="{{ character.name }}" class="w-full md:w-1/2 h-auto rounded-lg object-cover">
+                        <div class="md:w-1/2">
+                            <h3 class="text-lg font-bold text-red mb-2">{{ character.name }}</h3>
+                            <p class="mb-3">{{ character.description }}</p>
+                            <ul class="mt-4 text-xs text-left list-disc pl-4 italic text-red">
+                                <li>{{ character.keys[0] }}</li>
+                                <li>{{ character.keys[1] }}</li>
+                                <li>{{ character.keys[2] }}</li>
+                            </ul>
+                        </div>
+                    {% endif %}
+                </div>
+                {% set reverse = not reverse %}
+            {% endfor %}
+            
+        </div>
+
+        <div class="mt-6 italic p-4 rounded-lg">
+            <p class="text-sm italic">{{ translations.pages.index.characters.note }}</p>
+        </div>
+    </section>
+
+    <section class="mt-10 text-center" id="download">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.download.title }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-red bg-opacity-20 p-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex flex-col items-center">
+                    <svg class="w-16 h-16 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-4">{{ translations.pages.index.download.platform.pc.title }}</h3>
+                    <p class="mb-4">{{ translations.pages.index.download.platform.pc.description }}</p>
+                    <a href="https://store.steampowered.com/app/2302660/Homicipher/" target="_blank" class="inline-block bg-red hover:bg-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
+                        {{ translations.pages.index.download.platform.pc.button }}
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-red bg-opacity-20 p-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex flex-col items-center">
+                    <svg class="w-16 h-16 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.6,9.48l1.84-3.18c0.16-0.31,0.04-0.69-0.26-0.85c-0.29-0.15-0.65-0.06-0.83,0.22l-1.88,3.24 c-2.86-1.21-6.08-1.21-8.94,0L5.65,5.67c-0.19-0.29-0.58-0.38-0.87-0.2C4.5,5.65,4.41,6.01,4.56,6.3L6.4,9.48 C3.3,11.25,1.28,14.44,1,18h22C22.72,14.44,20.7,11.25,17.6,9.48z M7,15.25c-0.69,0-1.25-0.56-1.25-1.25 c0-0.69,0.56-1.25,1.25-1.25S8.25,13.31,8.25,14C8.25,14.69,7.69,15.25,7,15.25z M17,15.25c-0.69,0-1.25-0.56-1.25-1.25 c0-0.69,0.56-1.25,1.25-1.25s1.25,0.56,1.25,1.25C18.25,14.69,17.69,15.25,17,15.25z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-4">{{ translations.pages.index.download.platform.android.title }}</h3>
+                    <p class="mb-4">{{ translations.pages.index.download.platform.android.description }}</p>
+                    <div class="space-y-3">
+                        <a href="https://apkfyp.com/homicipher.html" target="_blank" class="border-2 border-red inline-block bg-green hover:bg-red text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-sm">
+                            {{ translations.pages.index.download.platform.android.button }}
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 p-4 rounded-lg">
+            <h3 class="text-lg font-bold mb-2">{{ translations.pages.index.download.note.title }}</h3>
+            <ul class="text-sm text-left list-disc pl-4">
+                {% for note in translations.pages.index.download.note.description %}
+                    <li>{{ note }}</li>
+                {% endfor %}
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="mt-10 text-center" id="system-requirements">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.download.system.title }}</h2>
+        <div class="bg-red bg-opacity-0 p-6 rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-red mb-4">{{ translations.pages.index.download.system.subtitle }}</h3>
+                    <ul class="space-y-2 text-sm">
+                        {% for key, value in translations.pages.index.download.system.minimum %}
+                            <li>{{ value }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-red mb-4">{{ translations.pages.index.download.system.subtitle2 }}</h3>
+                    <ul class="space-y-2 text-sm">
+                        {% for key, requirement in translations.pages.index.download.system.recommended %}
+                            <li>{{ requirement }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-10 text-center" id="contact">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.guide.title }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">    
+            {% for guide in translations.pages.index.guide.list %}
+            <div class="w-full cursor-pointer hover:brightness-50 overflow-hidden rounded-lg">
+                <a href="{{ guide.path | localizeUrl(currentLang) }}" class="">
+                  <img src="{{ guide.img }}" alt="Homicipher Guide - Dictionary" title="Homicipher Guide - Dictionary" style="height: 200px; width: 100%;">
+                  <div class="w-full bg-red text-light bg-opacity-20 p-4">
+                    <p class="mb-2 text-xs">{{ guide.date }}</p>
+                    <h3 class="text-sm font-bold">{{ guide.title }}</h3>
+                    <p class="mt-2 text-xs line-clamp-4">{{ guide.description }}</p>
+                  </div>
+                </a>
+            </div>
+            {% endfor %}
+              
+        </div>
+    </section>
+
+    <section class="mt-10 text-center" id="comments">
+        <h2 class="text-2xl font-bold mb-4 underline">{{ translations.pages.index.comments.title }}</h2>
+        <div class="bg-white bg-opacity-20 rounded-lg">
+            <div 
+            class="fb-comments" 
+            data-href="https://homicipher.cc/" 
+            data-width="100%" 
+            data-numposts="10"
+            data-colorscheme="light"></div>
+        </div>
+    </section>
+
+</main>

@@ -1,0 +1,84 @@
+---
+layout: base.njk
+---
+{# 获取当前语言 #}
+{% set currentLang = "en" %}
+{% for lang in ["zh", "ja", "ko", "fil", "vi", "id", "ms", "th", "ru", "uk", "de", "pt"] %}
+  {% if page.url.startsWith("/" + lang + "/") %}
+    {% set currentLang = lang %}
+  {% endif %}
+{% endfor %}
+
+{# 获取当前页面的i18n数据 #}
+{% if i18n[currentLang] %}
+  {% set translations = i18n[currentLang] %}
+{% else %}
+  {% set translations = i18n["en"] %}
+{% endif %}
+
+<section class="p-10 bg-green">
+  <h1 class="w-full md:w-1/2 mx-auto text-light text-xl lg:text-3xl font-black font-sans text-center bg-gradient-to-l from-green to-red">
+    <span class="underline decoration-double">📰 {{ translations.pages.blogentry.pageTitle }} 📰</span>
+  </h1>
+  <p class="text-center mt-4 text-xs">
+    {{ translations.pages.blogentry.subtitle }}
+  </p>
+  <h2 class="mt-10 mb-4 text-md lg:text-xl text-red font-black font-sans">
+    <span class="underline decoration-double">{{ translations.pages.blogentry.latestGuide }}</span> 
+  </h2>
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <div class="w-full cursor-pointer hover:brightness-50 overflow-hidden rounded-lg">
+      <a href="/zh/blog/mr-crawling-homicipher" class="">
+        <img src="/assets/crawling.jpeg" alt="{{ translations.pages.blogentry.articles.mrCrawling.alt }}" 
+             title="{{ translations.pages.blogentry.articles.mrCrawling.title_attr }}" 
+             style="height: 200px; width: 100%;">
+        <div class="w-full bg-red text-light bg-opacity-20 p-4">
+          <p class="mb-2 text-xs">{{ translations.pages.blogentry.articles.mrCrawling.date }}</p>
+          <h3 class="text-sm font-bold">{{ translations.pages.blogentry.articles.mrCrawling.title }}</h3>
+          <p class="mt-2 text-xs line-clamp-4">{{ translations.pages.blogentry.articles.mrCrawling.description }}</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="w-full cursor-pointer hover:brightness-50 overflow-hidden rounded-lg">
+      <a href="/zh/blog/homicipher-dictionary" class="">
+        <img src="/assets/pg1.jpeg" alt="{{ translations.pages.blogentry.articles.dictionary.alt }}" 
+             title="{{ translations.pages.blogentry.articles.dictionary.title_attr }}" 
+             style="height: 200px; width: 100%;">
+        <div class="w-full bg-red text-light bg-opacity-20 p-4">
+          <p class="mb-2 text-xs">{{ translations.pages.blogentry.articles.dictionary.date }}</p>
+          <h3 class="text-sm font-bold">{{ translations.pages.blogentry.articles.dictionary.title }}</h3>
+          <p class="mt-2 text-xs line-clamp-4">{{ translations.pages.blogentry.articles.dictionary.description }}</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="w-full cursor-pointer hover:brightness-50 overflow-hidden rounded-lg">
+      <a href="/zh/blog/homicipher-characters" class="">
+        <img src="/assets/mrcrawling.jpeg" alt="{{ translations.pages.blogentry.articles.characters.alt }}" 
+             title="{{ translations.pages.blogentry.articles.characters.title_attr }}" 
+             style="height: 200px; width: 100%;">
+        <div class="w-full bg-red text-light bg-opacity-20 p-4">
+          <p class="mb-2 text-xs">{{ translations.pages.blogentry.articles.characters.date }}</p>
+          <h3 class="text-sm font-bold">{{ translations.pages.blogentry.articles.characters.title }}</h3>
+          <p class="mt-2 text-xs line-clamp-4">{{ translations.pages.blogentry.articles.characters.description }}</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="w-full cursor-pointer hover:brightness-50 overflow-hidden rounded-lg">
+      <a href="/zh/blog/homicipher-all-endings-walkthrough" class="">
+        <img src="/assets/endings.jpeg" alt="{{ translations.pages.blogentry.articles.endings.alt }}" 
+             title="{{ translations.pages.blogentry.articles.endings.title_attr }}" 
+             style="height: 200px; width: 100%;">
+        <div class="w-full bg-red text-light bg-opacity-20 p-4">
+          <p class="mb-2 text-xs">{{ translations.pages.blogentry.articles.endings.date }}</p>
+          <h3 class="text-sm font-bold">{{ translations.pages.blogentry.articles.endings.title }}</h3>
+          <p class="mt-2 text-xs line-clamp-4">{{ translations.pages.blogentry.articles.endings.description }}</p>
+        </div>
+      </a>
+    </div>
+
+  </section>
+</section>
