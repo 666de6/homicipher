@@ -37,7 +37,7 @@ layout: base.njk
                 {{ translations.pages['homicipher-dictionary'].lastUpdated }}
             </p>
             <!-- Social Share Buttons 1-->
-            <div class="flex md:justify-center items-center gap-3 mb-6">
+            <div class="flex justify-center items-center gap-3 mb-6">
                 <!-- Twitter/X -->
                 <a href="https://twitter.com/intent/tweet?url=https://homicipher.cc/zh/blog/homicipher-dictionary/" 
                     target="_blank"
@@ -114,6 +114,12 @@ layout: base.njk
         <!-- Dictionary Pages -->
         <section class="mb-8">
             <h2 class="text-xl font-bold text-red mb-4">{{ translations.pages['homicipher-dictionary'].dictionary.title }}</h2>
+
+            <!-- {# adsterra Native Banner #} -->
+            <div id="container-bfe80d9fb682ec68985bd67507cc4320" class="bg-green bg-opacity-90 py-6"></div>
+            <script async="async" data-cfasync="false" src="//pl25078164.profitablecpmrate.com/bfe80d9fb682ec68985bd67507cc4320/invoke.js"></script>
+            <!-- {# adsterra Native Banner #} -->
+            
             {% for page in translations.pages['homicipher-dictionary'].dictionary.pages %}
             <div class="mb-8 border-l-2 border-red pl-4" id="page{{ loop.index }}">
                 <h3 class="text-lg font-bold text-red mb-4">{{ page.number }}</h3>

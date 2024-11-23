@@ -1,6 +1,41 @@
 ---
 layout: base.njk
 ---
+<style>
+    @keyframes textglitch {
+        0% { transform: translate(0); }
+        20% { transform: translate(-2px, 2px); }
+        40% { transform: translate(2px, -2px); }
+        60% { transform: translate(-2px, -2px); }
+        80% { transform: translate(2px, 2px); }
+        100% { transform: translate(0); }
+    }
+    @keyframes glitchbg {
+        0% { clip-path: inset(80% 0 0 0); transform: translate(-2px); }
+        20% { clip-path: inset(20% 0 40% 0); transform: translate(2px); }
+        40% { clip-path: inset(40% 0 60% 0); transform: translate(-2px); }
+        60% { clip-path: inset(60% 0 20% 0); transform: translate(2px); }
+        80% { clip-path: inset(0 0 80% 0); transform: translate(-2px); }
+        100% { clip-path: inset(80% 0 0 0); transform: translate(2px); }
+    }
+    @keyframes glitchbg2 {
+        0% { clip-path: inset(0 0 60% 0); transform: translate(2px); }
+        20% { clip-path: inset(40% 0 20% 0); transform: translate(-2px); }
+        40% { clip-path: inset(60% 0 40% 0); transform: translate(2px); }
+        60% { clip-path: inset(20% 0 80% 0); transform: translate(-2px); }
+        80% { clip-path: inset(80% 0 0 0); transform: translate(2px); }
+        100% { clip-path: inset(0 0 60% 0); transform: translate(-2px); }
+    }
+    .animate-textglitch {
+        animation: textglitch 0.3s infinite;
+    }
+    .animate-glitchbg {
+        animation: glitchbg 0.3s infinite;
+    }
+    .animate-glitchbg2 {
+        animation: glitchbg2 0.3s infinite;
+    }
+</style>
 <main class="bg-green bg-opacity-90 px-10 py-6 text-md mx-auto font-mono text-white container max-w-6xl">
     <section class="hero-section text-center">
         <h1 class="text-xl md:text-2xl font-black mb-4"><a href="/homicipher-wiki" class="text-red underline">Homicipher</a>: A Unique Horror Adventure of Language and Mystery</h1>
@@ -8,7 +43,7 @@ layout: base.njk
         
         <div class="bg-[url('/assets/homicipher.webp')] aspect-video bg-cover p-4 rounded-lg mb-6 flex flex-col items-center justify-center">
             <div class="flex gap-6 text-center mb-20">
-                <a href="/#download" class="group relative mt-10 inline-block bg-red hover:bg-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-lg overflow-hidden">
+                <a href="/#download" class="group relative mt-10 inline-block bg-red hover:bg-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-sm md:text-lg overflow-hidden">
                     <span class="relative z-10 group-hover:animate-textglitch">Play Homicipher Today</span>
                     <div class="absolute inset-0 z-0 opacity-0 group-hover:opacity-100">
                         <div class="absolute inset-0 animate-glitchbg bg-blood"></div>
@@ -18,42 +53,12 @@ layout: base.njk
             </div>
         </div>
 
-        <style>
-            @keyframes textglitch {
-                0% { transform: translate(0); }
-                20% { transform: translate(-2px, 2px); }
-                40% { transform: translate(2px, -2px); }
-                60% { transform: translate(-2px, -2px); }
-                80% { transform: translate(2px, 2px); }
-                100% { transform: translate(0); }
-            }
-            @keyframes glitchbg {
-                0% { clip-path: inset(80% 0 0 0); transform: translate(-2px); }
-                20% { clip-path: inset(20% 0 40% 0); transform: translate(2px); }
-                40% { clip-path: inset(40% 0 60% 0); transform: translate(-2px); }
-                60% { clip-path: inset(60% 0 20% 0); transform: translate(2px); }
-                80% { clip-path: inset(0 0 80% 0); transform: translate(-2px); }
-                100% { clip-path: inset(80% 0 0 0); transform: translate(2px); }
-            }
-            @keyframes glitchbg2 {
-                0% { clip-path: inset(0 0 60% 0); transform: translate(2px); }
-                20% { clip-path: inset(40% 0 20% 0); transform: translate(-2px); }
-                40% { clip-path: inset(60% 0 40% 0); transform: translate(2px); }
-                60% { clip-path: inset(20% 0 80% 0); transform: translate(-2px); }
-                80% { clip-path: inset(80% 0 0 0); transform: translate(2px); }
-                100% { clip-path: inset(0 0 60% 0); transform: translate(-2px); }
-            }
-            .animate-textglitch {
-                animation: textglitch 0.3s infinite;
-            }
-            .animate-glitchbg {
-                animation: glitchbg 0.3s infinite;
-            }
-            .animate-glitchbg2 {
-                animation: glitchbg2 0.3s infinite;
-            }
-        </style>
     </section>
+
+    <!-- {# adsterra Native Banner #} -->
+    <div id="container-bfe80d9fb682ec68985bd67507cc4320" class="bg-green bg-opacity-90 py-6"></div>
+    <script async="async" data-cfasync="false" src="//pl25078164.profitablecpmrate.com/bfe80d9fb682ec68985bd67507cc4320/invoke.js"></script>
+    <!-- {# adsterra Native Banner #} -->
 
     <section class="mt-10 text-center" id="about">
         <h2 class="text-2xl font-bold mb-4 underline">About Homicipher</h2>
