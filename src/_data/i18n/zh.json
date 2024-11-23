@@ -21,6 +21,10 @@
         "url": "/zh/homicipher-wiki/"
       },
       {
+        "title": "APK",
+        "url": "/zh/homicipher-apk/"
+      },
+      {
         "title": "下载",
         "url": "/zh/#download"
       },
@@ -296,7 +300,80 @@
       },
       "backButton": "<< 返回Homicipher"
     },
-
+    "homicipher-apk": {
+      "title": "Homicipher APK下载（最新版本）| Homicipher",
+      "description": "下载最新版本的Homicipher APK安卓游戏。体验这款令人毛骨悚然的冒险游戏，包含复杂的谜题和神秘的故事情节。",
+      "pageTitle": "Homicipher APK",
+      "subtitle": "Homicipher APK下载（最新版）",
+      "navigation": {
+        "title": "导航",
+        "mainPage": "主页",
+        "blog": "博客",
+        "wiki": "维基",
+        "comments": "评论"
+      },
+      "infoBox": {
+        "version": "版本",
+        "developer": "开发者",
+        "lastUpdate": "最后更新",
+        "compatibleWith": "系统要求",
+        "values": {
+          "version": "3.6.8",
+          "developer": "Gamera Games",
+          "lastUpdate": "2024年11月19日",
+          "compatibleWith": "Android 6.0+"
+        }
+      },
+      "contents": {
+        "title": "目录",
+        "sections": [
+          {
+            "title": "什么是Homicipher APK？",
+            "url": "#overview",
+            "content": [
+              "Homicipher APK 是一款引人入胜的恐怖游戏，将心理紧张与复杂的谜题机制融为一体。该游戏适用于 Android 设备，以其怪诞的氛围和有趣的叙事提供身临其境的体验。玩家扮演侦探霍莉，在充满神秘人物和扭曲秘密的世界中探索她隐藏的过去。",
+              "Homicipher APK 的最新版本提供流畅的游戏体验，很快就吸引了那些寻求惊险冒险的人。作为一款益智游戏，它通过与揭开故事谜团相关的错综复杂的谜题来挑战你的智力。"
+            ]
+          },
+          {
+            "title": "游戏玩法",
+            "url": "#gameplay",
+            "content": [
+              "Homicipher APK 的游戏玩法围绕着探索、解决谜题和决策。扮演霍莉，一位有着坎坷过去的侦探，你将探索诡异的环境，并面对掌握着故事更深奥秘的神秘人物。游戏的故事通过一系列谜题和决策展开，每一个谜题和决策都会带来独特的体验。",
+              "与游戏角色的互动至关重要，每一个选择都会影响结果。玩家必须破译神秘的符号和手势，深入了解对生存至关重要的独特语言学习元素。"
+            ]
+          },
+          {
+            "title": "主要特点",
+            "url": "#features",
+            "content": [
+              {
+                "title": "引人入胜的恐怖故事情节",
+                "description": "Homicipher APK 的核心是一个引人入胜的故事，将心理恐怖与深刻、神秘的叙事融为一体。玩家扮演霍莉（Holly）侦探，在充满神秘人物和黑暗秘密的令人毛骨悚然的世界中调查自己的过去。"
+              },
+              {
+                "title": "恐怖气氛体验",
+                "description": "游戏使用昏暗的房间、不祥的声音和微妙的视觉效果来营造恐惧的氛围。每个环境的设计都是为了让玩家沉浸在一个充满紧张的世界中，每个角落都隐藏着令人不安的谜团。"
+              },
+              {
+                "title": "复杂的谜题机制",
+                "description": "玩家会遇到复杂的基于逻辑的任务和环境谜语，它们无缝地融入到故事中。这些谜题不仅仅是一个游戏功能；他们推动情节发展，提供对游戏更深奥秘的见解。"
+              },
+              {
+                "title": "多重结局",              
+                "description": "Homicipher APK 具有基于玩家选择的多种结局，提供了高水平的可重玩性。您在整个游戏中做出的决定会影响其结果，从而允许探索不同的叙事路径。"  
+              }
+            ]
+          }
+          
+        ]
+      },
+      "download": {
+        "title": "下载APK v3.6.8",
+        "url": "#download",
+        "description": "准备好开始你的惊心动魄的旅程了吗？立即下载最新版本的 Homicipher APK，沉浸在这个独特的恐怖冒险中！"
+      }
+    },
     "homicipher-wiki": {
       "title": "Homicipher维基 | Homicipher",
       "description": "权威的Homicipher维基，包含游戏机制、角色档案、开发历史和技术特性的全面文档。",
@@ -513,7 +590,7 @@
           "mrscarletella": {
             "name": "Mr. Scarletella",
             "img": "/assets/mrscarletella.jpeg",
-            "description": "一个神秘而难以捉摸的人物，其真实身份和动机始终笼罩在迷雾中。他对主角的执着追寻为游戏增添了一层心理恐怖的元素，让玩家不断质疑他与主角之间的联系。",
+            "description": "一个神秘而难以捉摸的人物，其真实身份和动机始终笼罩在神秘之中。他对主角的执着追寻为游戏增添了一层心理恐怖的元素，让玩家不断质疑他与主角之间的联系。",
             "characteristics": {
               "title": "Mr. Scarletella的特点：",
               "items": [

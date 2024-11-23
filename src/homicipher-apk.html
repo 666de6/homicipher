@@ -1,0 +1,153 @@
+---
+layout: base.njk
+---
+<div class="bg-green px-10 py-6 text-md mx-auto font-mono text-white container max-w-6xl md:flex md:space-x-4">
+    <!-- 左侧导航栏 -->
+    <nav class="wiki-sidebar w-64 bg-opacity-80 px-4 py-6 hidden md:block">
+        <div class="logo mb-6">
+            <h1 class="text-xl lg:text-3xl font-black underline decoration-double font-sans">Homicipher APK</h1>
+        </div>
+        <div class="nav-links space-y-2">
+            <h3 class="text-sm font-bold text-red mb-2">Navigation</h3>
+            <ul class="space-y-1 text-xs">
+                <li><a href="/" class="hover:text-red underline">Main Page</a></li>
+                <li><a href="/blogentry/" class="hover:text-red underline">Blog</a></li>
+                <li><a href="/homicipher-wiki/" class="hover:text-red underline">Wiki</a></li>
+                <!-- <li><a href="/#download" class="hover:text-red underline">Download</a></li> -->
+                <li><a href="/#comments" class="hover:text-red underline">Comments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="py-6">
+        <!-- 主要内容 -->
+        <div class="">
+            <!-- 左侧主要内容 -->
+            <div class="">
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <h2 class="text-2xl font-black mb-4">Homicipher APK 3.6.8(latest version)</h2>
+                    <!-- Social Share Buttons -->
+                    <div class="flex md:justify-center items-center gap-3 mb-6">
+                        <!-- Twitter/X -->
+                        <a href="https://twitter.com/intent/tweet?url=https://homicipher.com/homicipher-apk&text=Check out Homicipher APK!" 
+                            target="_blank"
+                            class="flex items-center gap-2 px-3 py-2 bg-red bg-opacity-100 rounded-lg hover:bg-opacity-20 transition-all duration-300 text-light text-sm">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                            </svg>
+                        </a>
+                    
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://homicipher.com/homicipher-apk" 
+                            target="_blank"
+                            class="flex items-center gap-2 px-3 py-2 bg-red bg-opacity-100 rounded-lg hover:bg-opacity-20 transition-all duration-300 text-light text-sm">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </a>
+                    
+                        <!-- Pinterest -->
+                        <a href="https://pinterest.com/pin/create/button/?url=https://homicipher.com/homicipher-apk" 
+                            target="_blank"
+                            class="flex items-center gap-2 px-3 py-2 bg-red bg-opacity-100 rounded-lg hover:bg-opacity-20 transition-all duration-300 text-light text-sm">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                            </svg>
+                        </a>
+                    
+                        <!-- Copy Link -->
+                        <button onclick="copyPageUrl()"
+                                class="flex items-center gap-2 px-3 py-2 bg-red bg-opacity-100 rounded-lg hover:bg-opacity-20 transition-all duration-300 text-light text-sm">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- APK信息框 -->
+                <div class="info-box bg-red bg-opacity-20 p-4 rounded-lg mb-6">
+                    <div class="w-40 h-40 rounded-lg text-center mb-4">
+                        <img src="/assets/homicipher-apk-android.jpg" alt="Homicipher game cover" class="w-full rounded-lg max-w-xs">
+                    </div>
+                    
+                    <table class="w-full border-collapse">
+                        <tr class="border-b border-red border-opacity-20">
+                            <th class="text-left pr-4 py-2">Version</th>
+                            <td>3.6.8</td>
+                        </tr>
+                        <tr class="border-b border-red border-opacity-20">
+                            <th class="text-left pr-4 py-2">Developer</th>
+                            <td>Gamera Games</td>
+                        </tr>
+                        <tr class="border-b border-red border-opacity-20">
+                            <th class="text-left pr-4 py-2">Last Update</th>
+                            <td>2024-11-19</td>
+                        </tr>
+                        <tr class="border-b border-red border-opacity-20">
+                            <th class="text-left pr-4 py-2">Compatible with</th>
+                            <td>Android 6.0+</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 目录 -->
+                <div class="toc bg-black bg-opacity-20 p-4 rounded-lg mb-6">
+                    <h2 class="text-lg font-bold mb-2">Contents</h2>
+                    <ul class="list-decimal list-inside">
+                        <li><a href="#overview" class="hover:text-red underline">What is Homicipher APK?</a></li>
+                        <li><a href="#gameplay" class="hover:text-red underline">Gameplay</a></li>
+                        <li><a href="#features" class="hover:text-red underline">Key Features</a></li>
+                        <li><a href="#download" class="hover:text-red underline">Download</a></li>
+                    </ul>
+                </div>
+
+                <!-- 文章内容 -->
+                <section id="overview" class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 border-b border-red">What is Homicipher APK?</h2>
+                    <p class="mb-4">Homicipher APK is an engaging horror game that blends psychological tension with complex puzzle mechanics. Available for Android devices, this game offers an immersive experience with its eerie atmosphere and intriguing narrative. Players step into the shoes of Holly, a detective uncovering her hidden past while navigating a world filled with cryptic characters and twisted secrets.</p>
+                    <p class="mb-4">With its latest version offering smooth gameplay, Homicipher APK quickly captivates those seeking a thrilling adventure. As a puzzle game, it challenges your intellect with intricate puzzles tied to the story's unraveling mysteries.</p>
+                </section>
+
+                <section id="gameplay" class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 border-b border-red">Gameplay</h2>
+                    <p class="mb-4">Homicipher APK gameplay revolves around exploration, puzzle-solving, and decision-making. As Holly, a detective with a troubled past, you'll explore eerie environments and face cryptic characters who hold pieces of the story's deeper mystery. The game's story unfolds through a series of puzzles and decisions, each contributing to a unique experience.</p>
+                    <p class="mb-4">Interactions with the game's characters are pivotal, with every choice affecting the outcome. Players must decipher cryptic symbols and gestures, diving into a unique language learning element that is central to survival.</p>
+                </section>
+
+                <section id="features" class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 border-b border-red">Key Features</h2>
+                    
+                    <h3 class="text-lg font-bold mt-4 mb-2">Engaging Horror Storyline</h3>
+                    <p class="mb-4">At the heart of Homicipher APK lies a compelling story that blends psychological horror with deep, mysterious narratives. Players step into the shoes of Holly, a detective investigating her own past in a chilling world filled with cryptic characters and dark secrets.</p>
+
+                    <h3 class="text-lg font-bold mt-4 mb-2">Atmospheric Horror Experience</h3>
+                    <p class="mb-4">The game uses dimly lit rooms, ominous sounds, and subtle visual effects to create an atmosphere of dread. Each environment is designed to immerse players in a world filled with tension, where every corner hides an unsettling mystery.</p>
+
+                    <h3 class="text-lg font-bold mt-4 mb-2">Intricate Puzzle Mechanics</h3>
+                    <p class="mb-4">Players encounter complex logic-based tasks and environmental riddles woven seamlessly into the story. These puzzles are not just a gameplay feature; they drive the plot forward, offering insights into the game's deeper mysteries.</p>
+
+                    <h3 class="text-lg font-bold mt-4 mb-2">Multiple Endings</h3>
+                    <p class="mb-4">With multiple endings based on player choices, Homicipher APK offers a high level of replayability. The decisions you make throughout the game affect its outcome, allowing for different narrative paths to be explored.</p>
+                </section>
+
+                <section id="download" class="mb-8">
+                    <h2 class="text-xl font-bold mb-4 border-b border-red">Download</h2>
+                    <p class="mb-4">Ready to start your thrilling journey? Download the latest version of Homicipher APK now and immerse yourself in this unique horror adventure!</p>
+                    
+                    <div class="flex justify-start">
+                        <a href="https://apkmia.com/homicipher/" target="_blank" class="bg-red hover:bg-opacity-80 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
+                            </svg>
+                            <span>Download APK v3.6.8</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</div>

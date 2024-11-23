@@ -1,5 +1,4 @@
 {
-
   "meta": {
     "lang": "en",
     "dir": "ltr",
@@ -20,6 +19,10 @@
       {
         "title": "Wiki",
         "url": "/homicipher-wiki/"
+      },
+      {
+        "title": "APK",
+        "url": "/homicipher-apk/"
       },
       {
         "title": "Download",
@@ -47,6 +50,10 @@
     "homicipher-wiki": {
       "title": "Homicipher Wiki | Homicipher",
       "description": "The definitive Homicipher wiki featuring comprehensive documentation of gameplay mechanics, character profiles, development history, and technical features."
+    },
+    "homicipher-apk": {
+      "title": "Homicipher APK Download(latest version) | Homicipher",
+      "description": "Download the latest version of Homicipher APK for Android. Experience the thrilling horror adventure game with intricate puzzles and mysterious storylines."
     },
     "homicipher-characters": {
       "title": "Homicipher Characters Guide | Homicipher",
@@ -92,5 +99,4 @@
     "selectLanguage": "Select Language",
     "currentLanguage": "English"
   }
-
-} 
+}
