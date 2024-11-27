@@ -34,4 +34,95 @@
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://homicipher.cc/blog/homicipher-dictionary/</loc>
+        <lastmod>2024-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/blog/mr-crawling-homicipher/</loc>
+        <lastmod>2024-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/homicipher-wiki/</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/homicipher-apk/</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/zh/</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/zh/privacy/</loc>
+        <lastmod>2024-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/zh/blogentry/</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+   <url>
+        <loc>https://homicipher.cc/zh/blog/homicipher-characters/</loc>
+        <lastmod>2024-11-19</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/zh/blog/homicipher-all-endings-walkthrough/</loc>
+        <lastmod>2024-11-19</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/zh/blog/homicipher-dictionary/</loc>
+        <lastmod>2024-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/zh/blog/mr-crawling-homicipher/</loc>
+        <lastmod>2024-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url> 
+
+    <url>
+        <loc>https://homicipher.cc/zh/homicipher-wiki/</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://homicipher.cc/zh/homicipher-apk/</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
