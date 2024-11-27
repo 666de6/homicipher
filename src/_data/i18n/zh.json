@@ -27,10 +27,6 @@
       {
         "title": "下载",
         "url": "/zh/#download"
-      },
-      {
-        "title": "评论",
-        "url": "/zh/#comments"
       }
     ]
   },
@@ -382,6 +378,7 @@
         "title": "导航",
         "mainPage": "主页",
         "blog": "博客",
+        "apk": "安卓APK",
         "download": "下载",
         "comments": "评论"
       },
