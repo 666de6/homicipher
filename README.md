@@ -54,12 +54,6 @@ Homicipher is a groundbreaking female-targeted horror adventure game where playe
 - Enhanced audio experience
 - Steam achievements and cloud saves
 
-### Android Version
-- APK download available
-- Optimized touch controls
-- Portable gameplay experience
-- Version 2.1.3 current release
-
 ## Community & Support
 
 - **Website**: [homicipher.cc](https://homicipher.cc/)
@@ -73,6 +67,3 @@ This website is built using:
 - Nunjucks for templating
 - Modern web development best practices
 
-## License
-
-All rights reserved. The content and assets of Homicipher are protected by copyright law.
