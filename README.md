@@ -56,8 +56,10 @@ Homicipher is a groundbreaking female-targeted horror adventure game where playe
 
 ## Community & Support
 
-- **Website**: [homicipher.cc](https://homicipher.cc/)
-- **Steam Page**: [Homicipher on Steam](https://store.steampowered.com/app/2302660/Homicipher/)
+- **Guides**: [homicipher.cc](https://homicipher.cc/)
+- **Characters**: [Homicipher Characters](https://homicipher.cc/mr-crawling-homicipher-wiki/)
+- **Steam**: [Homicipher on Steam](https://store.steampowered.com/app/2302660/Homicipher/)
+- **Fandom**: [Wiki](https://english-otome-games.fandom.com/wiki/Homicipher)
 
 ## Development
 
